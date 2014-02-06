@@ -1,3 +1,3 @@
 # Simple Webcomic Theme
 
-A simple webcomic theme for Tumblr
+A simple webcomic theme for Tumblr by George Neocleous
