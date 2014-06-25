@@ -48,8 +48,8 @@ Once you have published your first post you _should_ copy and paste the post per
 
 Optional:
 
-3. To make your post image link to the next page, turn on "Clickable images". 
-4. To include a random page link, turn on "Random button".
+- To make your post image link to the next page, turn on "Clickable images". 
+- To include a random page link, turn on "Random button".
 
 ---
 
