@@ -1,0 +1,1409 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]> <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]> <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="{block:English}en{/block:English}{block:French}fr{/block:French}{block:German}de{/block:German}{block:Japanese}ja{/block:Japanese}{block:Italian}it{/block:Italian}{block:Spanish}es{/block:Spanish}{block:Polish}pl{/block:Polish}"><!--<![endif]-->
+
+<!--
+
+Simple Webcomic Theme v4.0.0
+https://github.com/geoneo1/SimpleWebcomicTheme
+
+Design by Mr. Geo Neo
+http://geoneo.co.uk | @mrgeoneo
+
+GNU General Public License v2 or later
+http://www.gnu.org/licenses/gpl-2.0.html
+
+-->
+<head>
+
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<title>{Title}{block:TagPage} - Posts Tagged -{Tag}&rsquo;{/block:TagPage}{block:PostSummary} - {PostSummary}{/block:PostSummary}{block:SearchPage} - {lang:Search results for SearchQuery}{/block:SearchPage}
+	</title>
+
+	{block:Description}
+	<meta name="description" content="{MetaDescription}">
+	{/block:Description}
+		
+	{block:PermalinkPage}
+	{block:Posts}
+	{block:Date}
+	<link rel="canonical" href="{Permalink}">
+	<link rel="shortlink" href="{ShortURL}">
+	{/block:Date}
+	{/block:Posts}
+	{/block:PermalinkPage}
+
+	<link rel="shortcut icon" href="{Favicon}">
+	<link rel="apple-touch-icon-precomposed" href="{PortraitURL-128}">
+	<link rel="alternate" type="application/rss+xml" title="{Title} RSS" href="{RSS}"/>
+
+	<link rel="stylesheet" href="http://static.tumblr.com/gyycyeo/eIAn34gig/normalize.css">
+	<link rel="stylesheet" href="http://static.tumblr.com/sdujjmx/8FPn70yoq/icomoon.io.css">
+	<link rel="stylesheet" href="http://static.tumblr.com/sdujjmx/MEOn7namy/main.css">
+
+	<!-- Google Fonts -->
+	<link href='http://fonts.googleapis.com/css?family={select:Body Font}:700,700italic,400italic,400|{select:Title Font}:400,300,700' rel='stylesheet' type='text/css'>
+
+{block:Hidden}
+
+	<!-- Custom Images -->
+	<meta name="image:Logo" content=""/>
+	<meta name="image:Background" content=""/>
+	<meta name="image:Header image" content=""/>
+	<meta name="image:Aside image" content=""/>
+
+	<meta name="image:First button" content="">
+	<meta name="image:Previous button" content="">
+	<meta name="image:Random button" content="">
+	<meta name="image:Next button" content="">
+	<meta name="image:Latest button" content="">
+
+	<!-- Custom Colors -->
+	<meta name="color:Header background" content="#666666">  
+	<meta name="color:Navigation background" content="#FFFFFF">
+	<meta name="color:Navigation links" content="#666666">
+	<meta name="color:Navigation link hover" content="#5ACDB3">
+	<meta name="color:Content background" content="#FFFFFF">
+	<meta name="color:Borders" content="#EEEEEE">
+	<meta name="color:Body text" content="#666666">
+	<meta name="color:Meta text" content="#AAAAAA">
+	<meta name="color:Aside background" content="#323232">
+	<meta name="color:Aside text" content="#FFFFFF">
+	<meta name="color:Footer text" content="#666666">
+
+	<!-- Custom Layout -->
+	<meta name="select:Layout" content="regular" title="Regular">
+	<meta name="select:Layout" content="alternative" title="Alternative">
+
+	<!-- Custom Fonts - Google Fonts -->
+	<meta name="select:Title font" content="Alegreya" title="Alegreya">
+	<meta name="select:Title font" content="Alegreya Sans" title="Alegreya Sans">
+
+	<meta name="select:Title font" content="Merriweather" title="Merriweather">
+	<meta name="select:Title font" content="Merriweather Sans" title="Merriweather Sans">
+
+	<meta name="select:Title font" content="Quattrocento" title="Quattrocento">  
+	<meta name="select:Title font" content="Quattrocento Sans" title="Quattrocento Sans"> 
+
+	<meta name="select:Title font" content="PT Serif" title="PT Serif">
+	<meta name="select:Title font" content="PT Sans Narrow" title="PT Sans Narrow">
+	<meta name="select:Title font" content="PT Sans" title="PT Sans">
+
+	<meta name="select:Title font" content="Roboto Condensed" title="Roboto Condensed">     
+	<meta name="select:Title font" content="Roboto Slab" title="Roboto Slab">
+	<meta name="select:Title font" content="Roboto" title="Roboto">
+
+	<meta name="select:Title font" content="Droid Serif" title="Droid Serif">
+	<meta name="select:Title font" content="Droid Sans" title="Droid Sans">
+
+	<meta name="select:Title font" content="Open Sans Condensed" title="Open Sans Condensed">
+	<meta name="select:Title font" content="Open Sans" title="Open Sans">
+
+	<meta name="select:Title font" content="Source Sans Pro" title="Source Sans Pro">
+	<meta name="select:Title font" content="Titillium Web" title="Titillium Web">
+	<meta name="select:Title font" content="Libre Baskerville" title="Libre Baskerville">
+	<meta name="select:Title font" content="Lora" title="Lora">
+	<meta name="select:Title font" content="Vollkorn" title="Vollkorn">
+	<meta name="select:Title font" content="Neuton" title="Neuton">
+	<meta name="select:Title font" content="Montserrat" title="Montserrat">  
+	<meta name="select:Title font" content="Playfair Display" title="Playfair Display">  
+	<meta name="select:Title font" content="Abril Fatface" title="Abril Fatface">
+
+	<meta name="select:Body font" content="Alegreya" title="Alegreya">
+	<meta name="select:Body font" content="Alegreya Sans" title="Alegreya Sans">
+
+	<meta name="select:Body font" content="Merriweather" title="Merriweather">
+	<meta name="select:Body font" content="Merriweather Sans" title="Merriweather Sans">
+
+	<meta name="select:Body font" content="Quattrocento" title="Quattrocento">    
+	<meta name="select:Body font" content="Quattrocento Sans" title="Quattrocento Sans">  
+
+	<meta name="select:Body font" content="PT Serif" title="PT Serif">
+	<meta name="select:Body font" content="PT Sans" title="PT Sans">  
+
+	<meta name="select:Body font" content="Roboto" title="Roboto">
+
+	<meta name="select:Body font" content="Droid Serif" title="Droid Serif">
+	<meta name="select:Body font" content="Droid Sans" title="Droid Sans">          
+
+	<meta name="select:Body font" content="Open Sans" title="Open Sans">
+
+	<meta name="select:Body font" content="Source Sans Pro" title="Source Sans Pro">
+	<meta name="select:Body font" content="Lato" title="Lato">
+	<meta name="select:Body font" content="Titillium Web" title="Titillium Web">
+	<meta name="select:Body font" content="Anonymous Pro" title="Anonymous Pro">  
+
+	<meta name="select:Body font" content="Libre Baskerville" title="Libre Baskerville">
+	<meta name="select:Body font" content="Vollkorn" title="Vollkorn">    
+	<meta name="select:Body font" content="Neuton" title="Neuton"> 
+	<meta name="select:Body font" content="Lora" title="Lora">     
+	<!-- /Custom Fonts - Google Fonts -->
+
+	<!-- Booleans -->
+	<meta name="if:Big header" content="0"> 
+	<meta name="if:Repeat header image" content="0">
+	<meta name="if:Repeat background image" content="0">
+	<meta name="if:Repeat aside image" content="0">
+
+	<meta name="if:Show title in nav bar" content="0">
+	<meta name="if:Navigation fixed top" content="0">
+	<meta name="if:Show navigation" content="1">
+	<meta name="if:Show home link" content="1">
+	<meta name="if:Show archive link" content="1">
+	<meta name="if:Show search link" content="1"/>
+
+	<meta name="if:Show jump pagination" content="1" />
+	<meta name="if:Show top pagination" content="0"/>
+	<meta name="if:Comic pagination" content="0">
+	<meta name="if:Clickable image" content="0">
+	<meta name="if:Random button" content="0">
+	<meta name="if:Back to top button" content="1">
+
+	<meta name="if:Post metadata" content="1">
+	<meta name="if:Post author" content="0">
+	<meta name="if:Post tags" content="1">	
+	<meta name="if:Post time stamp" content="1">
+	<meta name="if:Post notes count" content="1">
+	<meta name="if:Post comment count" content="1">
+	<meta name="if:Post content source" content="1"> 
+	<meta name="if:Post share button" content="1">	  
+	<meta name="if:Post like button" content="1">
+	<meta name="if:Post reblog button" content="1">
+	<meta name="if:Post permalink button" content="1">	
+	<meta name="if:Post notes" content="1">
+
+	<meta name="if:Show social links" content="0">
+	<meta name="if:Show tweets" content="0">
+	<meta name="if:Show group members" content="0">
+	<meta name="if:Show blogs I follow" content="0"/>
+	<meta name="if:Tiny follow avatars" content="0"/>
+	<meta name="if:Show likes" content="0"/>
+	<meta name="if:Show Instagram" content="0"/>
+
+	<meta name="if:Show copyright" content="1">  
+	<meta name="if:Show Powered by Tumblr" content="1">
+	<meta name="if:Show theme promotion" content="1">
+	<meta name="if:Show RSS" content="1">
+
+	<!-- Custom Text -->
+	<meta name="text:Wrapper width" content="1080">
+	<meta name="text:Header height" content="280">
+	<meta name="text:First post URL" content="">
+
+	<meta name="text:Author" content="">
+
+	<meta name="text:Instagram userId" content="http://jelled.com/instagram/lookup-user-id"/>
+	<meta name="text:Instagram count" content="4"/>
+	<meta name="text:Twitter count" content="4">
+	<meta name="text:Disqus shortname" content="">
+	<meta name="text:Google Analytics ID" content=""/>
+	<meta name="text:Clicky ID" content=""/>
+
+	<!-- Custom Text - Social Links -->
+	<meta name="text:Behance username" content=""/>
+	<meta name="text:Blogger URL" content=""/>
+	<meta name="text:DeviantArt username" content=""/>
+	<meta name="text:Dribbble username" content=""/>
+	<meta name="text:Facebook username" content=""/>
+	<meta name="text:Flickr username" content=""/>
+	<meta name="text:Forrst username" content=""/>
+	<meta name="text:Github username" content=""/>
+	<meta name="text:Google Plus username" content=""/>
+	<meta name="text:Instagram username" content=""/>
+	<meta name="text:Lastfm username" content=""/>
+	<meta name="text:Linkedin Profile URL" content=""/>	
+	<meta name="text:Pinterest username" content=""/>
+	<meta name="text:Rdio username" content=""/>
+	<meta name="text:Skype username" content=""/>
+	<meta name="text:Soundcloud username" content=""/>
+	<meta name="text:StumbleUpon username" content=""/>
+	<meta name="text:Tumblr URL" content=""/>
+	<meta name="text:Twitter username" content=""/>
+	<meta name="text:Vimeo username" content=""/>
+	<meta name="text:YouTube username" content=""/>
+	<meta name="text:Personal site URL" content=""/>  
+	<meta name="text:Email sddress" content=""/>
+
+{/block:Hidden}
+
+	<!-- Theme CSS -->
+	<style>
+
+	/*  $ELEMENTS
+	_______________________________________________________ */
+
+	body { 
+	font: 1em/1.75em  {select:Body Font}; 
+	color: {color:Body Text};
+	background: {BackgroundColor};
+	}
+
+	{block:IFBackgroundImage}
+	body { background: {BackgroundColor} url({image:Background}) no-repeat top center; }
+	{/block:IFBackgroundImage}
+
+	{block:IfRepeatBackgroundImage}
+	body { background-repeat:repeat; background-size: auto; }
+	{/block:IfRepeatBackgroundImage}
+
+	header#masthead, nav#access, .wrapper {	max-width: {text:Wrapper Width}px; }
+
+	{block:IFBigHeader}
+	header#masthead, nav#access { max-width: 100%; }
+	{/block:IFBigHeader}
+
+	.wrapper main {	background-color: {color:Content Background}; }
+
+	h1, h2, h3, h4, h5, h6 { 
+		font: 2em/1.25em {select:Title Font}; 
+		color: {color:Body Text};
+	}
+
+	h2 { font-size: 1.75em }
+	h3 { font-size: 1.5em }
+	h4 { font-size: 1.25em }
+	h5 { font-size: 1em }
+	h6 { font-size: .75em }
+
+	/*  $GROUPEDCOLORS
+	_____________________________________ */
+
+	a:visited, section#search #search-form input:focus, article > h1.title a:link, article.answer .asker-question span.asker a:link, 
+	article .post-author a:link, article.link .title a, footer.metadata a:hover, .pop-up-box, .pop-up-box .title, 
+	.share-links a { color: {color:Body Text}; }
+
+	a:link, .pagination > a:hover, .comic-pagination > a:hover, article > h1.title a:hover, 
+	article.answer .asker-question span.asker a:hover, article .post-author a:hover, article.link a:hover, 
+	footer.metadata .tags a:hover, footer.metadata ul.post-meta a:hover { color: {AccentColor}; }
+
+	section#search #search-form input, aside section .end a, .pagination > a, .comic-pagination > a, 
+	article.link .host a, footer.metadata a { color: {color:Meta Text}; }
+
+	aside, aside section .title, .social-links ul li a, aside section#twitter ul li a { color: {color:Aside Text}; }
+
+	/*  $HEADER
+	_____________________________________ */
+
+	header#masthead { background-color: {color:Header Background}; }
+
+	{block:IfHeaderImageImage}
+	header#masthead { background: {color:Header Background} url({image:Header Image}) no-repeat top center; } 
+	{/block:IfHeaderImageImage} 
+
+	{block:IFRepeatHeaderImage}
+	body header#masthead { background-repeat:repeat; background-size: auto; }
+	{/block:IfRepeatHeaderImage}	
+
+	{block:IfNotNavigationFixedTop}
+	header#masthead > div { 
+		box-shadow:         inset 0 -4px 4px -4px rgba(0, 0, 0, 0.25);
+		-moz-box-shadow:    inset 0 -4px 4px -4px rgba(0, 0, 0, 0.25);
+		-webkit-box-shadow: inset 0 -4px 4px -4px rgba(0, 0, 0, 0.25);
+	}
+	{/block:IfNotNavigationFixedTop}
+
+	{block:IfBigHeader}
+	{block:IfHeaderImageImage}
+	{block:IFNotRepeatHeaderImage}
+	header#masthead { background-size: cover; }
+	{/block:IFNotRepeatHeaderImage}
+	{/block:IfHeaderImageImage}
+	{/block:IfBigHeader}
+
+	header#masthead h1 a { 
+		height: {text:Header Height}px;
+		color: {TitleColor};
+
+		-webkit-transition: all 0.5s ease;
+		-moz-transition:    all 0.5s ease;
+		-ms-transition:     all 0.5s ease;
+		-o-transition:      all 0.5s ease;
+		transition:         all 0.5s ease;		
+	}
+	{block:IfLogoImage}
+	header h1 a span { display: none; }
+	nav#access h5 a span { display: none; }
+	{/block:IfLogoImage}
+
+	{block:HideHeaderImage}
+	header#masthead h1,
+	header#masthead > div { display: none; }
+	{/block:HideHeaderImage} 
+
+	nav#access { background-color: {color:Navigation Background}; }
+
+	{block:IfNavigationFixedTop}
+	{block:IfShowNavigation}
+	body { padding-top: 3.5em; }
+	{/block:IfShowNavigation}
+	nav#access {
+		z-index: 999;
+		position: fixed;
+		top: -1px;
+		left: 0;
+		width: 100%;
+		max-width: 100%;
+	}
+	{/block:IfNavigationFixedTop}	
+
+	nav#access ul li a:link, nav#access ul li a:visited, 
+	nav#access .ico-search, nav#access .ico-bars,
+	section#search #search-form .ico-times { color: {color:Navigation Links}; }
+	nav#access ul li a:hover, nav#access .ico-search:hover,	
+	nav#access .ico-bars:hover, section#search #search-form .ico-times:hover { color: {color:Navigation Link Hover}; }
+
+	{block:IfShowTitleInNavBar}
+	nav#access h5.title { 
+		display: inline;
+		margin: 0;
+		letter-spacing: -0.5px;
+		font-weight: 700;
+	}
+	nav#access h5.title a { 
+		-webkit-transition: all 0.5s ease;
+		-moz-transition:    all 0.5s ease;
+		-ms-transition:     all 0.5s ease;
+		-o-transition:      all 0.5s ease;
+		transition:         all 0.5s ease;
+
+		color: {TitleColor}; 
+	}
+	nav#access h5.title a:hover { 
+		text-decoration: none;
+		color: {color:Navigation Link Hover}; 
+	}
+	{block:ShowTitle}
+	nav#access ul { 
+		float: right;
+		line-height: inherit;
+	}
+	{/block:ShowTitle}
+
+	{block:ShowTitle}
+	{block:IfLogoImage}
+	nav#access .wrapper { padding: 0; }
+	nav#access h5.title { float: left; }
+	nav#access h5.title img {
+		display: block;
+		max-height: 80px;
+		padding: 0.5em;
+	}
+	nav#access ul { padding: 1.55em 1em; }
+	{/block:IfLogoImage}
+	{/block:ShowTitle}
+	{/block:IfShowTitleInNavBar}
+
+	#btt:hover { background-color: {AccentColor}; }
+
+	/*  $SEARCH
+	_____________________________________ */
+
+	section#search { width: {text:Wrapper Width}px; }
+
+	section#search #search-form { background-color: {color:Navigation Background}; }
+
+	{block:IfShowTitleInNavBar}
+	{block:IfLogoImage}
+	section#search { top: 54px; } 
+	section#search #search-form { left: 0; max-width: 100%; }
+	{/block:IfLogoImage}
+	{/block:IfShowTitleInNavBar}
+
+
+	/*  $ASIDE
+	_____________________________________ */
+
+	aside { background: {color:Aside Background} url({image:Aside Image}) no-repeat top center; }
+
+	{block:IfRepeatAsideImage}
+	aside { background-repeat:repeat; background-size: auto; }
+	{/block:IfRepeatAsideImage}
+
+	aside section .title { font-family: {select:Body Font}; }	
+	
+	.social-links ul li a span.ico { background-color: {AccentColor}; }
+
+	/*  $FOOTER
+	_____________________________________ */
+
+	footer.sub-basement {
+		color: {color:Footer Text}; 
+		background-color: {color:Aside Background};
+	}	
+	footer.sub-basement a { color: {color:Footer Text}; }
+
+
+	/*  $POST
+	_____________________________________ */
+
+	article.post:nth-of-type(n+2),
+	section#notes ol li,
+	article blockquote,
+	#notes blockquote { border-color: {color:Borders}; }
+
+
+	/*  $POST-META
+	_____________________________________ */
+
+	{block:IfShowSocialLinks}
+	footer.metadata ul.post-meta { padding-top: .2em; }
+	{/block:IfShowSocialLinks}
+
+
+	/*  $MEDIA-QUERIES
+	_____________________________________ */
+
+	@media only screen and (min-width:1600px){
+		header#masthead h1 a{height:480px;}
+	}
+	@media only screen and (min-width:1080px) and (max-width:1600px){
+		header#masthead h1 a{height:380px;}
+	}
+	@media only screen and (min-width:880px) and (max-width:1080px){
+		header#masthead h1 a{height:320px;}
+	}
+	@media only screen and (max-width: 480px) {
+		{block:IfNotNavigationFixedTop} 
+		nav#access { position: relative; }
+		{/block:IfNotNavigationFixedTop}	
+
+		nav#access .wrapper > ul li a,
+		nav#access .wrapper > ul li span { border-color: {color:Borders}; }
+		nav#access .wrapper > ul li span { border: none; color: {color:Body Text}; }
+
+		nav#access .wrapper > ul li a:link, 
+		nav#access .wrapper > ul li a:visited { color: {color:Body Text}; }
+		nav#access .wrapper > ul li a:hover { background-color: {color:Borders}; }	
+		
+		{block:IfShowTitleInNavBar}
+		nav#access { 
+			float: left;
+			width: 100%;
+		}
+		nav#access .ico-bars { 
+			float: right;
+			padding-top: .25em;
+		}
+		nav#access ul { padding: 0; }
+		{block:IfLogoImage}
+		nav#access .ico-bars { 
+			padding-top: 1.5em;
+		}
+		nav#access .wrapper > ul { top: 80px; }
+
+		section#search #search-form {
+			padding: 0.75em 0.5em;
+			top: -2em;
+		}
+		{/block:IfLogoImage}
+		{/block:IfShowTitleInNavBar}
+
+	}
+
+	/* Custom CSS */
+	{CustomCSS}
+	</style>
+
+	<!-- Scripts -->
+
+	<!--[if lt IE 9]>
+	<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+	<script src="http://ie7-js.googlecode.com/svn/version/2.1(beta4)/IE9.js"></script>
+	<![endif]-->
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+	<script src="http://modernizr.com/downloads/modernizr-latest.js"></script>
+	<script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-instagram/0.2.2/jquery.instagram.min.js"></script>
+	
+	<script>
+	var SWCTheme = new function() {
+		var win, body, doc, $;
+		this.init = function(jQuery) {
+			$ = jQuery; win = $(window); body = $("body"); doc = $(document);
+			
+			var nav_access = $("nav#access");
+
+			{block:IfNavigationFixedTop}
+			// masthead drop shadow
+			win.scroll(function(){
+				if(win.scrollTop()>20){
+					nav_access.addClass("scroll")
+				} else {
+					if(nav_access.hasClass("scroll")){
+						nav_access.removeClass("scroll")
+					}
+				}
+			});
+			// ===
+			{/block:IfNavigationFixedTop}
+
+			// Mobile nav
+			nav_access.find(".ico-bars").click(function () {
+				nav_access.find(".wrapper > ul").slideToggle("slow");
+				return false;
+			});
+			// ===
+
+			// Show/Hide Search
+			var search_bar = $("section#search");
+			search_bar.hide();
+			$(".ico-search, .ico-times").click(function() {
+				search_bar.fadeToggle( "fast", "linear" ), function() {
+					$(this).find("input").first().focus();
+				};		
+				return false;
+			});
+			// ===
+
+			// Pagination Page
+			{block:Pagination}
+				var item = $("#pagination-bottom > nav").first();
+				{block:IfShowTopPagination}
+				// Clone Pagination
+				$("#pagination-top").append(item.clone());
+				{/block:IfShowTopPagination}
+
+				{block:IfComicPagination}
+				// Move Webcomic Pagination
+				$("#pagination-comic").append(item.clone());
+				{/block:IfComicPagination}
+				if(item.hasClass("comic-pagination"))
+					item.hide();
+			{/block:Pagination}
+			// ===
+
+			// Pagination Post
+			{block:PermalinkPagination}
+				{block:PermalinkPage}
+					// Pagination
+					var item = $("#pagination-bottom > nav").first();
+					{block:IfShowTopPagination}
+					// Clone Pagination
+					$("#pagination-top").append(item.clone());
+					{/block:IfShowTopPagination}
+
+					{block:IfComicPagination}
+					// Move Webcomic Pagination
+					$("#pagination-comic").append(item.clone());
+					{/block:IfComicPagination}
+
+					if(item.hasClass("comic-pagination"))
+						item.hide();
+				{/block:PermalinkPage} 
+			{/block:PermalinkPagination} 
+			// ===
+
+			// Slim wrapper fallback
+			var section = $(".wrapper");
+			var width = section.width();
+				if (width < 801)
+					section.first().addClass("wrapper-slim");
+			// ===
+
+			// Social pop-up
+			$(".toggle").click(function() {
+				$(this).parent().find(".pop-up-box").toggleClass("visible"); 
+				return false;
+			});
+			// ===
+
+			// Back to top button
+			var btt_button = $("#btt");
+			btt_button.click(function() {
+				$('html, body').animate({scrollTop : 0}, 300); 
+			});
+
+			doc.scroll(function() {
+				if(doc.scrollTop() > 300 ) {
+					if( !btt_button.hasClass("active") )
+						btt_button.fadeIn(500, function() {
+							$(this).addClass("active");
+						});
+				} 
+				else {
+					if( btt_button.hasClass("active") ) {
+						btt_button.fadeOut(500, function() {
+							$(this).removeClass("active");
+						});
+					}
+				}
+			});
+			// ===
+
+		}; // init()
+	};
+
+	$(document).ready(function() {
+		SWCTheme.init($);
+	});
+	</script>
+
+	{block:IfGoogleAnalyticsID}
+	<!-- Google Analytics -->
+	<script>
+		var _gaq=[['_setAccount','{text:Google Analytics ID}'],['_trackPageview']];
+		(function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+		g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
+		s.parentNode.insertBefore(g,s)}(document,'script'));
+	</script>
+	{/block:IfGoogleAnalyticsID}
+
+	{block:ifClickyID}
+	<!-- Clicky -->
+	<script type="text/javascript">
+		var clicky = { log: function(){ return; }, goal: function(){ return; }};
+		var clicky_site_id = {text:Clicky ID};
+		(function() {
+		var s = document.createElement('script');
+		s.type = 'text/javascript';
+		s.async = true;
+		s.src = ( document.location.protocol == 'https:' ? 'https://static.getclicky.com/js' : 'http://static.getclicky.com/js' );
+		( document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0] ).appendChild( s );
+		})();
+	</script>
+		<a title="Google Analytics Alternative" href="http://getclicky.com/{text:Clicky ID}"></a>
+		<noscript><p><img alt="Clicky" width="1" height="1" src="http://in.getclicky.com/{text:Clicky ID}ns.gif"></p></noscript>
+	{/block:ifClickyID}
+
+</head>
+
+<body data-urlencoded-name="{URLEncodedName}" class="{select:Layout} {block:IndexPage} index-page{/block:IndexPage}{block:PermalinkPage} permalink{/block:PermalinkPage}{block:SearchPage} search-page{block:NoSearchResults} no-results{/block:NoSearchResults}{/block:SearchPage} avatar-style-{AvatarShape}">
+
+	<header id="masthead">
+		<div>
+			<h1 class="title">
+				<a href="/" title="{lang:Home}">
+				{block:IfNotShowTitleInNavBar}
+				{block:ShowTitle}
+				<span>{Title}</span>
+				{block:IfLogoImage}
+					<img  class="logo" src="{image:Logo}" alt="{Title}">
+				{/block:IfLogoImage}
+				{/block:ShowTitle}
+				{/block:IfNotShowTitleInNavBar}
+				</a>
+			</h1>
+		</div>
+		{block:IfShowNavigation}
+			<nav id="access">
+				<div class="wrapper">
+				<span class="ico ico-bars"></span>
+
+				{block:ShowTitle}
+				{block:IfShowTitleInNavBar}
+				<h5 class="title">
+					<a href="http://{Name}.tumblr.com" title="{lang:Home}"><span>{Title}</span>
+					{block:IfLogoImage}
+						<img src="{image:Logo}" alt="{Title}">
+					{/block:IfLogoImage}
+					</a>
+				</h5>
+				{/block:IfShowTitleInNavBar}
+				{/block:ShowTitle}
+				
+				<ul>
+					{block:IfShowHomeLink}
+					<li><a href="http://{Name}.tumblr.com" title="{lang:Home}">{lang:Home}</a></li>
+					{/block:IfShowHomeLink}				
+				{block:HasPages}
+				{block:Pages}
+					<li><a href="{URL}" title="{Label}">{Label}</a></li>
+				{/block:Pages}
+				{/block:HasPages}
+					{block:SubmissionsEnabled}
+					<li><a href="/submit" title="{SubmitLabel}">{SubmitLabel}</a></li>
+					{/block:SubmissionsEnabled}
+					{block:AskEnabled}
+					<li><a href="/ask" title="{AskLabel}">{AskLabel}</a></li>
+					{/block:AskEnabled}
+					{block:IfShowArchiveLink}
+					<li><a href="/archive" title="{lang:Archive}">{lang:Archive}</a></li>
+					{/block:IfShowArchiveLink}
+					{block:IfShowSearchLink}
+					<li><span class="ico-search" title="{lang:Search}"></span></li>
+					{/block:IfShowSearchLink}
+				</ul>	
+			
+				<section id="search" role="search">
+					<form id="search-form" action="/search" method="get">
+						<input type="text" name="q" value="{SearchQuery}" placeholder="{lang:Search keywords}&hellip;">
+						<span class="ico-times" title="{lang:Close}"></span>
+					</form>
+				</section>
+				</div>
+			</nav>
+		{/block:IfShowNavigation}
+	</header>
+
+	<div class="wrapper">
+	<main>
+		{block:IfShowTopPagination}
+			<div id="pagination-top"></div>
+		{/block:IfShowTopPagination}
+
+		{block:TagPage}
+			<h2 class="title tagged">Posts tagged <span>"{Tag}"</span></h2>
+		{/block:TagPage}
+
+		{block:SearchPage}
+			<h2 class="title searched">
+			{lang:SearchResultCount results for SearchQuery}
+			{block:NoSearchResults}{lang:Sorry no search results found}{/block:NoSearchResults}
+			</h2>
+		{/block:SearchPage}
+
+		{block:Posts}
+		<article class="post postid-{PostID} {PostType} {block:RebloggedFrom}reblogged{/block:RebloggedFrom}">
+
+			{block:Text}
+				{block:Title}
+				<h1 class="title"><a href="{Permalink}">{Title}</a></h3>
+				{/block:Title}
+
+				<div class="caption">{Body}</div>
+
+				{block:IfComicPagination}
+				<div id="pagination-comic"></div>
+				{/block:IfComicPagination}
+			{/block:Text}
+
+
+			{block:Photo}
+				{block:IfNotClickableImage}
+				<figure class="photo-item" {block:HighRes}style="display:none"{/block:HighRes} >
+					{LinkOpenTag}<img src="{PhotoURL-500}" alt="{PhotoAlt}">{LinkCloseTag}
+				</figure>
+
+				{block:HighRes}
+				<figure class="photo-hires-item">
+					{LinkOpenTag}<img src="{PhotoURL-HighRes}" alt="{PhotoAlt}">{LinkCloseTag}
+				</figure>
+				{/block:HighRes}
+				{/block:IfNotClickableImage}
+
+				{block:IfClickableImage}
+				{block:IndexPage}
+				<figure class="photo-item" {block:HighRes}style="display:none"{/block:HighRes}>
+					{block:PreviousPage}<a href="{PreviousPage}">{/block:PreviousPage}
+
+					<img src="{PhotoURL-500}" alt="{PhotoAlt}">
+					{block:PreviousPage}</a>{/block:PreviousPage}
+
+				</figure>
+
+				{block:HighRes}
+				<figure class="photo-hires-item">
+					{block:PreviousPage}<a href="{PreviousPage}">{/block:PreviousPage}
+					<img src="{PhotoURL-HighRes}" alt="{PhotoAlt}">
+					{block:PreviousPage}</a>{/block:PreviousPage}
+				</figure>
+				{/block:HighRes}
+				{/block:IndexPage}
+
+				{block:PermalinkPagination}
+				<figure class="photo-item" {block:HighRes}style="display:none"{/block:HighRes}>
+					{block:NextPost}<a href="{NextPost}">{/block:NextPost}
+					<img src="{PhotoURL-500}" alt="{PhotoAlt}">
+					{block:NextPost}</a>{/block:NextPost}
+
+				</figure>
+
+				{block:HighRes}
+				<figure class="photo-hires-item">
+					{block:NextPost}<a href="{NextPost}">{/block:NextPost}
+					<img src="{PhotoURL-HighRes}" alt="{PhotoAlt}">
+					{block:NextPost}</a>{/block:NextPost}
+				</figure>
+				{/block:HighRes}
+				{/block:PermalinkPagination}
+				{/block:IfClickableImage}
+
+				{block:IfComicPagination}
+				<div id="pagination-comic"></div>
+				{/block:IfComicPagination}
+
+				{block:Caption}
+				<div class="caption">{Caption}</div>
+				{/block:Caption}
+			{/block:Photo}
+
+
+			{block:Panorama}
+				<figure class="panorama-item">
+					{LinkOpenTag}<img src="{PhotoURL-Panorama}" alt="{PhotoAlt}">{LinkCloseTag}
+				</figure>
+
+				{block:IfComicPagination}
+				<div id="pagination-comic"></div>
+				{/block:IfComicPagination}				
+
+				{block:Caption}
+				<div class="caption">{Caption}</div>
+				{/block:Caption}
+			{/block:Panorama}
+
+
+			{block:Photoset}
+				{Photoset}
+
+				{block:IfComicPagination}
+				<div id="pagination-comic"></div>
+				{/block:IfComicPagination}
+
+				{block:Caption}
+				<div class="caption">{Caption}</div>
+				{/block:Caption}
+			{/block:Photoset}
+
+
+			{block:Quote}
+			<div class="quote-item">
+				<blockquote>{Quote}</blockquote>
+
+				{block:Source}
+				<div class="source">{Source}</div>
+				{/block:Source}
+			</div>
+
+				{block:IfComicPagination}
+				<div id="pagination-comic"></div>
+				{/block:IfComicPagination}
+
+			{/block:Quote}
+
+
+			{block:Link}
+				<div class="link_button">
+					<div class="link_text_container">
+					<h4 class="title"><a href="{URL}" class="link" {Target}>{Name}<span class="ico-link"></span></a></h4>
+
+					{block:Host}
+					<div class="host"><a href="{URL}" class="link" {Target}>{Host}</a></div>
+					{/block:Host}  
+					</div>
+				</div>
+
+
+				{block:IfComicPagination}
+				<div id="pagination-comic"></div>
+				{/block:IfComicPagination}
+
+				{block:Description}
+				<div class="description">{Description}</div>
+				{/block:Description}
+			{/block:Link}
+
+
+			{block:Chat}
+				{block:Title}
+				<h1 class="title"><a href="{Permalink}">{Title}</a></h3>
+				{/block:Title}
+
+				<ul class="chat">
+					{block:Lines}
+					<li class="{Alt} user_{UserNumber}">
+						{block:Label}
+						<span class="label">{Label}</span>
+						{/block:Label}
+						{Line}
+					</li>
+					{/block:Lines}
+				</ul>
+
+				{block:IfComicPagination}
+				<div id="pagination-comic"></div>
+				{/block:IfComicPagination}	
+			{/block:Chat}
+
+
+			{block:Audio}
+				{block:TrackName}
+				<h1 class="title"><a href="{Permalink}">{TrackName}</a></h1>{/block:TrackName}
+
+				{block:AudioEmbed}
+				<div class="audio-embed">{AudioEmbed}</div>
+				{/block:AudioEmbed}
+
+				{block:PlayCount}
+				<div class="play-count">{lang:Played PlayCount times}</div>
+				{/block:PlayCount}
+
+				{block:ExternalAudio}
+				<div class="download"><a href="{ExternalAudioURL}">{lang:Download}</a></div>
+				{/block:ExternalAudio}
+
+				{block:IfComicPagination}
+				<div id="pagination-comic"></div>
+				{/block:IfComicPagination}
+
+				{block:Caption}
+				<div class="caption">{Caption}</div>
+				{/block:Caption}
+			{/block:Audio}
+
+
+			{block:Video}
+				<div class="video-responsive">{Video-700}</div>
+
+				{block:IfComicPagination}
+				<div id="pagination-comic"></div>
+				{/block:IfComicPagination}
+
+				{block:Caption}
+				<div class="caption">{Caption}</div>
+				{/block:Caption}
+			{/block:Video}
+
+
+			{block:Answer}
+				<div class="question">
+					<div class="asker-question">
+						<span class="asker"><img class="asker-avatar user-avatar" src="{AskerPortraitURL-24}" alt="">{lang:Asker asked 2}:</span>
+
+						<span class="question">{Question}</span>
+					</div>
+
+					
+				</div>
+
+				{block:Answerer}
+				<div class="answerer-answer">
+					<div class="answerer">{Answerer}:</div>
+					<blockquote>{Answer}</blockquote>
+				</div>
+				{/block:Answerer}
+
+				<div class="replies">
+					{Replies}
+				</div>
+
+				{block:IfComicPagination}
+				<div id="pagination-comic"></div>
+				{/block:IfComicPagination}	
+			{/block:Answer}
+
+			{block:Date}
+			{block:IfPostMetadata}
+			<footer class="metadata">
+				{block:IfPostAuthor}
+				<div class="post-author">
+					{block:ShowAvatar}<img class="user-avatar" src="{PostAuthorPortraitURL-24}"/>{/block:ShowAvatar}
+					{lang:Posted by PostAuthorName 2}
+				</div>
+				{/block:IfPostAuthor}
+
+				{block:IfPostTags}
+				{block:HasTags}
+				<div class="tags">
+					{block:Tags}
+					<a href="{TagURL}">#{Tag}</a> 
+					{/block:Tags}
+				</div>
+				{/block:HasTags}
+				{/block:IfPostTags}
+
+				<ul class="post-meta">
+					{block:IfPostTimeStamp}
+					{block:Date}
+						<li class="timestamp"><a href="{Permalink}">{Month} {DayOfMonth}, {Year}</a></li>
+					{/block:Date}
+					{/block:IfPostTimeStamp}
+
+					{block:IfPostNotes}
+					{block:IfPostNotesCount}
+					{block:NoteCount}
+					<li class="notecount">
+						<a href="{Permalink}#notes">{NoteCountWithLabel}</a>
+					</li>
+					{/block:NoteCount}
+					{/block:IfPostNotesCount}
+					{/block:IfPostNotes}
+
+					{block:IfPostCommentCount}
+					{block:IfDisqusShortname}
+					{block:IndexPage}
+					<li class="commentcount">
+						<a class="dsq-comment-count" href="{Permalink}#disqus_thread">Comments</a>
+					</li>
+
+					<script type="text/javascript">
+					var disqus_shortname = '{text:Disqus Shortname}';
+
+					(function () {
+					var s = document.createElement('script'); s.async = true;
+					s.type = 'text/javascript';
+					s.src = '//' + disqus_shortname + '.disqus.com/count.js';
+					(document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
+					}());
+					</script>
+					{/block:IndexPage}
+					{/block:IfDisqusShortname}
+					{/block:IfPostCommentCount}
+
+					{block:IfPostContentSource}
+					{block:ContentSource}
+					<li class="content-souce">
+						{lang:Source}: <a href="{SourceURL}">{SourceTitle}</a>
+					</li>
+					{/block:ContentSource}
+					{/block:IfPostContentSource}
+
+				</ul>
+
+				<ul class="share">
+				{block:IfPostShareButton}
+					<li><span class="ico-export toggle"></span>
+					<div class="pop-up-box">
+						<h5 class="title">{lang:Share this}:</h5>
+						<div class="share-links">
+							<a target="_new" href="https://twitter.com/intent/tweet?url={ShortURL}" class="share-twitter">Twitter <span class="ico-twitter"></span></a>
+							<a target="_new" href="https://www.facebook.com/sharer.php?u={Permalink}{block:Title}&t={Title}{/block:Title}" class="share-facebook">Facebook <span class="ico-facebook"></span></a>
+							<a target="_new" href="http://pinterest.com/pin/create/button/?url={Permalink}&media=" class="share-pinterest">Pinterest <span class="ico-pinterest"></span></a>
+							<a target="_new" href="https://plus.google.com/share?url={Permalink}" class="share-google">Google+ <span class="ico-googleplus"></span></a>
+						</div>
+						<div class="short-link"><input type="text" readonly="" value="{ShortURL}"></div>
+					</div>
+					</li>
+				{/block:IfPostShareButton}			
+				{block:IfPostLikeButton}
+					<li>{LikeButton color="grey" size="16"}</li>
+				{/block:IfPostLikeButton}
+
+				{block:IfPostReblogButton}
+					<li>{ReblogButton color="grey" size="16"}</li>
+				{/block:IfPostReblogButton}
+
+				{block:IfPostPermalinkButton}
+					<li><a href="{Permalink}"><span class="permalink ico-link"></span></a></li>
+				{/block:IfPostPermalinkButton}
+				</ul>
+			</footer>
+			{/block:IfPostMetadata}
+			{/block:Date}
+
+		</article>
+		{/block:Posts}
+
+		<div id="pagination-bottom">
+		{block:IfNotComicPagination}
+			{block:Pagination}
+			<nav class="pagination {block:IfShowJumpPagination}jump_pagination{/block:IfShowJumpPagination}">
+				{block:PreviousPage}
+				<a href="{PreviousPage}">{lang:Previous page}</a>
+				{/block:PreviousPage}
+
+				{block:IfShowJumpPagination}			
+					{block:JumpPagination length="5"}
+					{block:CurrentPage}
+					<span class="current_page">{PageNumber}</span>
+					{/block:CurrentPage}
+
+					{block:JumpPage}
+					<a class="jump_page" href="{URL}">{PageNumber}</a>
+					{/block:JumpPage}
+					{/block:JumpPagination}
+				{/block:IfShowJumpPagination}
+
+				{block:NextPage}
+				<a href="{NextPage}">{lang:Next page}</a>
+				{/block:NextPage}
+			</nav>
+			{/block:Pagination}
+
+			{block:PermalinkPagination}
+			<nav class="permalink-pagination pagination">
+				{block:PreviousPost}
+				<a href="{PreviousPost}">{lang:Previous post}</a>
+				{/block:PreviousPost}
+
+				{block:NextPost}
+				<a href="{NextPost}">{lang:Next post}</a>
+				{/block:NextPost} 
+			</nav>
+			{/block:PermalinkPagination}
+		{/block:IfNotComicPagination}
+
+		{block:IfComicPagination}
+			{block:Pagination}
+			<nav class="comic-pagination">
+				{block:NextPage}
+				{block:IfFirstButtonImage}<a href="/page/{TotalPages}"><img src="{image:First Button}" alt="{PhotoAlt}"></a>{/block:IfFirstButtonImage}
+				
+				{block:IfNotFirstButtonImage}<a href="/page/{TotalPages}">First</a>{/block:IfNotFirstButtonImage}
+				{/block:NextPage}
+
+
+				{block:NextPage}
+				{block:IfPreviousButtonImage}<a href="{NextPage}"><img src="{image:Previous Button}" alt="{PhotoAlt}"></a>{/block:IfPreviousButtonImage}
+				{block:IfNotPreviousButtonImage}<a href="{NextPage}">{lang:Previous}</a>{/block:IfNotPreviousButtonImage}
+				{/block:NextPage}
+
+				{block:IfRandomButton}
+				{block:IfRandomButtonImage}<a href="/random"><img src="{image:Random Button}" alt="{PhotoAlt}"></a>{/block:IfRandomButtonImage}
+				{block:IfNotRandomButtonImage}<a href="/random"><span class="ico-random"></span></a>{/block:IfNotRandomButtonImage}
+				{/block:IfRandomButton}
+
+				{block:PreviousPage}
+				{block:IfNextButtonImage}<a href="{PreviousPage}"><img src="{image:Next Button}" alt="{PhotoAlt}"></a>{/block:IfNextButtonImage}
+				{block:IfNotNextButtonImage}<a href="{PreviousPage}">{lang:Next}</a>{/block:IfNotNextButtonImage}
+				{/block:PreviousPage}
+
+				{block:PreviousPage}
+				{block:IfLatestButtonImage}<a href="/"><img src="{image:Latest Button}" alt="{PhotoAlt}"></a>{/block:IfLatestButtonImage}
+				{block:IfNotLatestButtonImage}<a href="/">Latest</a>{/block:IfNotLatestButtonImage}
+				{/block:PreviousPage}
+			</nav>
+			{/block:Pagination}
+
+			{block:PermalinkPagination}
+			<nav class="comic-pagination permalink-pagination pagination">
+				{block:IfFirstPostURL}
+				{block:PreviousPost}
+				{block:IfFirstButtonImage}<a href="{text:First Post URL}"><img src="{image:First Button}" alt="{PhotoAlt}"></a>{/block:IfFirstButtonImage}
+				{block:IfNotFirstButtonImage}<a href="{text:First Post URL}">First</a>{/block:IfNotFirstButtonImage}
+				{/block:PreviousPost}
+				{/block:IfFirstPostURL}
+
+				{block:PreviousPost}
+				{block:IfPreviousButtonImage}<a href="{PreviousPost}"><img src="{image:Previous Button}" alt="{PhotoAlt}"></a>{/block:IfPreviousButtonImage}
+				{block:IfNotPreviousButtonImage}<a href="{PreviousPost}">{lang:Previous}</a>{/block:IfNotPreviousButtonImage}
+				{/block:PreviousPost}
+
+				{block:IfRandomButton}
+				{block:IfRandomButtonImage}<a href="/random"><img src="{image:Random Button}" alt="{PhotoAlt}"></a>{/block:IfRandomButtonImage}
+				{block:IfNotRandomButtonImage}<a href="/random"><span class="ico-random"></span></a>{/block:IfNotRandomButtonImage}
+				{/block:IfRandomButton}
+
+				{block:NextPost}
+				{block:IfNextButtonImage}<a href="{NextPost}"><img src="{image:Next Button}" alt="{PhotoAlt}"></a>{/block:IfNextButtonImage}
+				{block:IfNotNextButtonImage}<a href="{NextPost}">{lang:Next}</a>{/block:IfNotNextButtonImage}
+				{/block:NextPost}
+
+				{block:NextPost}
+				{block:IfLatestButtonImage}<a href="/"><img src="{image:Latest Button}" alt="{PhotoAlt}"></a>{/block:IfLatestButtonImage}
+				{block:IfNotLatestButtonImage}<a href="/">Latest</a>{/block:IfNotLatestButtonImage}
+				{/block:NextPost}
+			</nav>
+			{/block:PermalinkPagination}
+		{/block:IfComicPagination}
+		</div>
+
+
+		{block:PermalinkPagination}
+		{block:IfDisqusShortname}		
+		<!-- Disqus -->
+		<div id="disqus_thread"></div>
+		<script type="text/javascript">
+
+		var disqus_shortname = '{text:Disqus Shortname}'; 
+
+		(function() {
+			var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+			dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+			(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+		})();
+		</script>
+		<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+		{/block:IfDisqusShortname}
+		{/block:PermalinkPagination}
+
+		{block:IfPostNotes}
+		{block:PermalinkPage}
+		{block:PostNotes}
+			<section id="notes">
+			<h5>{lang:Notes}</h5>
+				{PostNotes-16}
+			</section>
+		{/block:PostNotes}
+		{/block:PermalinkPage}
+		{/block:IfPostNotes}
+	</main>
+
+	<aside>
+		{block:ShowDescription}
+		<section class="postscript">
+			<h4 class="title">{lang:About}</h4>
+			{block:ShowAvatar} 
+			<a href="/" title="{lang:Home}"><img class="user-avatar alignleft " src="{PortraitURL-128}"/></a>
+			{/block:ShowAvatar}
+
+			{block:Description}
+			<p class="description">{Description}</p>
+			{/block:Description}
+
+		</section>
+		{/block:ShowDescription} 
+
+		{block:IfShowSocialLinks}
+		<section class="social-links">
+			<h4 class="title">{lang:Follow me}</h4>
+			<ul>
+				{block:IfBehanceUsername}<li class="behance"><a href="http://www.behance.net/{text:Behance Username}" title="{text:Behance Username} on Behance"><span class="ico ico-behance"></span></a></li>{/block:IfBehanceUsername}
+
+				{block:IfBloggerURL}<li class="blogger"><a href="{text:Blogger URL}" title="My Blogger Site"><span class="ico ico-blogger"></span></a></li>{/block:IfBloggerURL}
+
+				{block:IfDeviantArtUsername}<li class="deviantart"><a href="http://{text:DeviantArt Username}.deviantart.com/" title="{text:DeviantArt Username} on DeviantArt"><span class="ico ico-deviantart"></span></a></li>{/block:IfDeviantArtUsername}
+
+				{block:IfDribbbleUsername}<li class="dribbble"><a href="http://dribbble.com/players/{text:Dribbble Username}" title="{text:Dribbble Username} on Dribbble"><span class="ico ico-dribbble"></span></a></li>{/block:IfDribbbleUsername}
+
+				{block:IfFacebookUsername}<li class="facebook"><a href="http://www.facebook.com/{text:Facebook Username}" title="Facebook Profile"><span class="ico ico-facebook"></span></a></li>{/block:IfFacebookUsername}
+
+				{block:IfFlickrUsername}<li class="flickr"><a href="http://www.flickr.com/photos/{text:Flickr Username}" title="{text:Flickr Username} on Flickr"><span class="ico ico-flickr"></span></a></li>{/block:IfFlickrUsername}
+
+				{block:IfForrstUsername}<li class="forrst"><a href="http://forrst.com/people/{text:Forrst Username}" title="{text:Forrst Username} on Forrst"><span class="ico ico-forrst"></span></a></li>{/block:IfForrstUsername}
+
+				{block:IfGithubUsername}<li class="github"><a href="http://github.com/{text:github Username}" title="{text:github Username} on github"><span class="ico ico-github"></span></a></li>{/block:IfGithubUsername}
+
+				{block:IfGooglePlusUsername}<li class="googleplus"><a href="https://plus.google.com/u/0/+{text:Google Plus Username}/" title="My Google Plus Site"><span class="ico ico-googleplus"></span></a></li>{/block:IfGooglePlusUsername}
+
+				{block:IfInstagramUsername}<li class="instagram"><a href="http://instagram.com/{text:Instagram Username}" title="{text:Instagram Username} on Instagram"><span class="ico ico-instagram"></span></a></li>{/block:IfInstagramUsername}
+
+				{block:IfLastfmUsername}<li class="lastfm"><a href="http://www.last.fm/user/{text:Lastfm Username}" title="{text:Lastfm Username} on Last.fm"><span class="ico ico-lastfm"></span></a></li>{/block:IfLastfmUsername}
+
+				{block:IfLinkedinProfileURL}<li class="linkedin"><a href="{text:Linkedin Profile URL}" title="Linkedin Profile"><span class="ico ico-linkedin"></span></a></li>{/block:IfLinkedinProfileURL}
+
+				{block:IfPinterestUsername}<li class="pinterest"><a href="http://pinterest.com/{text:Pinterest Username}" title="{text:Pinterest Username} on Pinterest"><span class="ico ico-pinterest"></span></a></li>{/block:IfPinterestUsername}
+
+				{block:IfRdioUsername}<li class="rdio"><a href="http://www.rdio.com/#/people/{text:Rdio Username}" title="{text:Rdio Username} on Rdio"><span class="ico ico-rdio"></span></a></li>{/block:IfRdioUsername}
+
+				{block:IfSkypeUsername}<li class="skype"><a href="skype:{text:Skype Username}?userinfo" title="My Skype Info"><span class="ico ico-skype"></span></a></li>{/block:IfSkypeUsername}
+
+				{block:IfSoundcloudUsername}<li class="soundcloud"><a href="http://soundcloud.com/{text:Soundcloud Username}" title="{text:Soundcloud Username} on Soundcloud"><span class="ico ico-soundcloud"></span></a></li>{/block:IfSoundcloudUsername}
+
+				{block:IfStumbleUponUsername}<li class="stumbleupon"><a href="http://www.stumbleupon.com/stumbler/{text:StumbleUpon Username}" title="{text:StumbleUpon Username} on StumbleUpon"><span class="ico ico-stumbleupon"></span></a></li>{/block:IfStumbleUponUsername}
+
+				{block:IfTumblrURL}<li class="tumblr"><a href="{text:Tumblr URL}" title="My Tumblr Site"><span class="ico ico-tumblr"></a></li>{/block:IfTumblrURL}
+
+				{block:IfTwitterUsername}<li class="twitter"><a href="http://www.twitter.com/{text:Twitter Username}" title="@{text:Twitter Username} on Twitter"><span class="ico ico-twitter"></span></a></li>{/block:IfTwitterUsername}
+
+				{block:IfVimeoUsername}<li class="vimeo"><a href="http://www.vimeo.com/{text:Vimeo Username}" title="{text:Vimeo Username} on Vimeo"><span class="ico ico-vimeo"></span></a></li>{/block:IfVimeoUsername}
+
+				{block:IfYoutubeUsername}<li class="youtube"><a href="http://www.youtube.com/{text:Youtube Username}" title="{text:Youtube Username} on Youtube"><span class="ico ico-youtube"></span></a></li>{/block:IfYoutubeUsername}
+
+				{block:IfPersonalSiteURL}<li class="personal-website different"><span class="label">Website</span><a href="{text:Personal Site URL}" title="My Personal Site"><span class="text">{text:Personal Site URL}</span></a></li>{/block:IfPersonalSiteURL}
+
+				{block:IfEmailAddress}<li class="email-address different"><span class="label">Mail</span><a href="mailto:{text:Email Address}" title="Email Address"><span class="text">{text:Email Address}</span></a></li>{/block:IfEmailAddress}
+			</ul>
+		</section>
+		{/block:IfShowSocialLinks}
+
+		{block:IfShowTweets}
+		{block:Twitter}
+		<section id="twitter" style="display:none;">
+			<h4 class="title">{lang:Latest Tweets}</h4>
+
+			<ul id="tweets"></ul>
+			<div class="end"><a href="https://twitter.com/{TwitterUsername}">@{TwitterUsername}</a></div>
+		
+		<script type="text/javascript">
+			function recent_tweets(data) {
+				for (i=0; i<{text:Twitter Count}; i++) {
+					document.getElementById("tweets").innerHTML =
+						document.getElementById("tweets").innerHTML +
+						'<li><a href="http://twitter.com/{TwitterUsername}/status/' +
+						(data[i].id_str ? data[i].id_str : data[i].id) +
+						'"><div class="content">' + data[i].text +
+						'</div></a></li>';
+				}
+				document.getElementById("twitter").style.display = 'inline-block';
+			}
+		</script>
+		</section>
+		{/block:Twitter}
+		{/block:IfShowTweets}		
+
+
+		{block:IfShowGroupMembers}
+		{block:GroupMembers}
+			<section class="group-members">
+				<h4 class="title">{lang:Group members}</h2>
+
+				<ul>
+					{block:GroupMember}
+					<li>
+						<a href="{GroupMemberURL}" title="{GroupMemberTitle}">
+						<img class="user-avatar" src="{GroupMemberPortraitURL-64}" alt=""/></a>
+					</li>
+					{/block:GroupMember}
+				</ul>
+			</section>
+		{/block:GroupMembers}
+		{/block:IfShowGroupMembers}
+
+		{block:IfShowLikes}
+		{block:Likes}
+			<section class="likes">
+				<h4 class="title">{lang:Likes}</h4>
+				{Likes limit="1" summarize="100" width="150"}
+				<div class="end"><a href="http://www.tumblr.com/liked/by/{Name}">
+				{lang:More liked posts}
+				</a></div>
+			</section>
+		{/block:Likes}
+		{/block:IfShowLikes}
+
+		{block:IfShowBlogsIFollow}
+		{block:Following}
+			<section class="following">
+				<h4 class="title">{lang:Following}</h4>
+
+				<ul>
+					{block:Followed}
+					<li>
+						<a href="{FollowedURL}"><img class="user-avatar" src="{block:IfNotTinyFollowAvatars}{FollowedPortraitURL-64}{/block:IfNotTinyFollowAvatars}{block:IfTinyFollowAvatars}{FollowedPortraitURL-24}{/block:IfTinyFollowAvatars}"/></a>
+					</li>
+					{/block:Followed}
+				</ul>
+			</section>
+		{/block:Following}
+		{/block:IfShowBlogsIFollow}
+
+		{block:IfShowInstagram}
+		{block:IfInstagramUserId}
+		<section class="instagram-widget">
+		<h4 class="title">Instagram</h4>
+		<div id="instagram"></div>
+		<script type="text/javascript">
+			$("#instagram").instagram({
+				userId: '{text:Instagram userId}',
+				clientId: '630c615eef464dd392e471bb09c37ca3',
+				image_size:'thumbnail',
+				show: {text:Instagram Count}
+		    });
+		</script>
+		</section>
+		{/block:IfInstagramUserId}
+		{/block:IfShowInstagram}
+	</aside>
+
+	<footer class="sub-basement">
+		{block:IfShowCopyright}
+		<span class="copyright">&copy; {CopyrightYears} {block:IfAuthor}{text:Author}{/block:IfAuthor}</span>
+		{/block:IfShowCopyright}
+
+		{block:IfShowPoweredByTumblr}
+		<span class="tumblr">{lang:Powered by Tumblr 2}</span>
+		{/block:IfShowPoweredByTumblr}
+
+		{block:IfShowThemePromotion}
+		<span class="theme"><a href="">Simple Webcomic Theme</a></span>
+		{/block:IfShowThemePromotion}
+
+		{block:IfShowRSS}
+		<span class="rss"><span class="ico-rss"></span><a href="{RSS}">{lang:Subscribe via RSS}</a></span>
+		{/block:IfShowRSS}
+	</footer>
+
+	</div> <!-- close .wrapper -->
+
+	{block:IfBackToTopButton}
+	<div id="btt"><span class="ico-arrow-up"></span></div>
+	{/block:IfBackToTopButton}
+
+{block:IfShowTweets}{block:Twitter}<script type="text/javascript" src="/tweets.js"></script>{/block:Twitter}{/block:IfShowTweets}
+</body>
+</html>
