@@ -1,3 +1,5 @@
+#SWC Theme Options
+
 | Option                    | Description                             | 
 | ------------------------- | --------------------------------------- |
 | Title                     | The HTML-safe title of your blog.
