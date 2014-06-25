@@ -36,10 +36,10 @@
 | Layout                    | An option of two layouts.
 | Title font                | Select from 25 carefully chosen typefaces for titles.
 | Body font                 | Select from 20 carefully chosen typefaces for body text.
-| Big header                | Makes the header image and navigation the full width of the screen.
-| Repeat header image       | Repeat the header background image - overwrites the top/center default.
 | Repeat background image   | Repeat the background image - overwrites the top/center default.
+| Repeat header image       | Repeat the header background image - overwrites the top/center default.
 | Repeat aside image        | Repeat the aside background image - overwrites the top/center default.
+| Big header                | Makes the header image and navigation the full width of the screen.
 | Show title in nav bar     | Move the title from the header to the navigation bar.
 | Navigation fixed top      | Make the navigation bar fixed top - full width of the screen.
 | Show navigation           | Show/hide the navigation bar.
