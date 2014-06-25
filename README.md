@@ -44,8 +44,13 @@ Converting your Tumblr blog to a webcomic can be achieved in just _two_ simple s
 1. In the customization panel, you will need to turn on “Comic Pagination”. 
 2. **Go to _Advance options_ and set post per page to 1**. 
 
-Once you have published your first post you should copy and paste the post permalink into the "First Post URL" field. This ensures the comic pagination works correctly.
+Once you have published your first post you _should_ copy and paste the post permalink into the "First Post URL" field. This ensures the comic pagination works correctly.
 
-To make your post image link to the next page, turn on "Clickable images". To include a random page link, turn on "Random button".
+Optional:
+
+3. To make your post image link to the next page, turn on "Clickable images". 
+4. To include a random page link, turn on "Random button".
+
+---
 
 To Get a full breakdown of the options please check out: [SWC Theme Options](SWC_THEME_OPTIONS)
