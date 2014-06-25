@@ -11,11 +11,7 @@
 | Show avatar               | Show/hide portrait photo for your blog.
 | Show title                | Show/hide the title of your blog.
 | Show description          | Show/hide the description of your blog.
-
----
-
-| Option                    | Description                             | 
-| ------------------------- | --------------------------------------- |
+|                           | 
 | Logo                      | The logo image - replaces the title text.
 | Background                | The background image - default positioned top/center. 
 | Header image              | The header image - default positioned top/center.
