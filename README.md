@@ -5,7 +5,7 @@ _Simple Webcomic Theme_ is a responsive **Tumblr** theme that has been design to
 
 ###Overview
 
-- Turn your blog into a _webcomic_ in just a few clicks.
+- Turn your Tumblr blog into a _webcomic_ in just a few clicks.
 - Fully customize your content's width, choosing from _two_ layouts.
 - Select from a wide range of header styles, with the option change your header’s height and upload a logo image.
 - Easily add custom pages, links to your social media pages, and setup site-tracking and a commenting system.
@@ -39,7 +39,7 @@ _Be aware_ that your twitter feed, blogs you follow, and post you like will not 
 ---
 
 ###Setup
-Converting your regular blog to a webcomic can be achieved in just a _two_ simple steps. In the customization panel, you will need to turn on “Comic Pagination”. **Then go to _Advance options_ and set post per page to 1**. 
+Converting your Tumblr blog to a webcomic can be achieved in just a _two_ simple steps. In the customization panel, you will need to turn on “Comic Pagination”. **Then go to _Advance options_ and set post per page to 1**. 
 
 Once you have published your first post you should copy and paste the post permalink into the "First Post URL" field. This ensures the comic pagination works correctly.
 
