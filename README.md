@@ -3,7 +3,7 @@
 _Simple Webcomic Theme_ is a responsive **Tumblr** theme that has been design to make starting a webcomic quick, easy and free. The SWC Theme provides a clean, _highly customizable_ blog layout with extra care given to typography and usability.
 
 - Author: George Neocleous (Mr. Geo Neo)
-- Version: v 4.0
+- Version: v 4.0 June 2014
 - Documentation: [https://github.com/geoneo1/SimpleWebcomicTheme](https://github.com/geoneo1/SimpleWebcomicTheme)
 - Licenced: GNU General Public License v2 or later [http://www.gnu.org/licenses/gpl-2.0.html](http://www.gnu.org/licenses/gpl-2.0.html)
 
