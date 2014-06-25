@@ -1,6 +1,6 @@
 #Simple Webcomic Theme
 
-_Simple Webcomic Theme_ is a responsive Tumblr theme that has been design to make starting a webcomic quick, easy and free. The SWC Theme provides a clean, _highly customizable_ blog layout with extra care given to typography and usability.
+_Simple Webcomic Theme_ is a responsive *Tumblr* theme that has been design to make starting a webcomic quick, easy and free. The SWC Theme provides a clean, _highly customizable_ blog layout with extra care given to typography and usability.
 
 
 ###Overview
