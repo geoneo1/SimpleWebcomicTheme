@@ -16,11 +16,11 @@
 | Background                | The background image - default positioned top/center. 
 | Header image              | The header image - default positioned top/center.
 | Aside image               | The aside image - default positioned top/center. 
-| First button              | The "First" button image - "Comic pagination" must be turned on.
-| Previous button           | The "Previous" button image - "Comic pagination" must be turned on.
-| Random button             | The "Random" button image - "Comic pagination" and "Random button" must be turned on.
-| Next button               | The "Next" button image - "Comic pagination" must be turned on.
-| Latest button             | The "Latest" button image - "Comic pagination" must be turned on.
+| **First button**          | **The "First" button image - "Comic pagination" must be turned on.**
+| **Previous button**       | **The "Previous" button image - "Comic pagination" must be turned on.**
+| **Random button**         | **The "Random" button image - "Comic pagination" and "Random button" must be turned on.**
+| **Next button**           | **The "Next" button image - "Comic pagination" must be turned on.**
+| **Latest button**         | **The "Latest" button image - "Comic pagination" must be turned on.**
 |                           | 
 | Header background         | The header background color.
 | Navigation background     | The navigation background color.
@@ -91,4 +91,4 @@
 |Username / URL             | If filled in a link will appear in the social link section of the aside.
 
 
-Note: **Bold items** are webcomic specific
+**Bold items** are webcomic specific
