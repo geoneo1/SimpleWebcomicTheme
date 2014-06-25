@@ -11,7 +11,6 @@
 | Show avatar               | Show/hide portrait photo for your blog.
 | Show title                | Show/hide the title of your blog.
 | Show description          | Show/hide the description of your blog.
-
 | Logo                      | The logo image - replaces the title text.
 | Background                | The background image - default positioned top/center. 
 | Header image              | The header image - default positioned top/center.
@@ -21,7 +20,6 @@
 | **Random button**         | **The "Random" button image - "Comic pagination" and "Random button" must be turned on.**
 | **Next button**           | **The "Next" button image - "Comic pagination" must be turned on.**
 | **Latest button**         | **The "Latest" button image - "Comic pagination" must be turned on.**
-
 | Header background         | The header background color.
 | Navigation background     | The navigation background color.
 | Navigation links          | The navigation links color.
@@ -33,11 +31,9 @@
 | Aside background          | The aside background color.
 | Aside text                | The aside text color.
 | Footer text               | The footer text color.
-
 | Layout                    | An option of two layouts.
 | Title font                | Select from 25 carefully chosen typefaces for titles.
 | Body font                 | Select from 20 carefully chosen typefaces for body text.
-|                           | 
 | Big header                | Makes the header image and navigation the full width of the screen.
 | Repeat header image       | Repeat the header background image - overwrites the top/center default.
 | Repeat background image   | Repeat the background image - overwrites the top/center default.
@@ -77,7 +73,6 @@
 | Show Powered by Tumblr    | Show/hide "Powered by Tumblr" in footer.
 | Show theme promotion      | Show/hide "Simple Webcomic Theme" link in footer.
 | Show RSS                  | Show/hide RSS link in footer.
-
 |Wrapper width              | Content width - 1080 is the default.
 |Header height              | Header image height - 280 is the default.
 |**First post URL**         | **The URL of your first post - needed if you are using "Comic pagination".**
