@@ -21,11 +21,7 @@
 | Random button             | The "Random" button image - "Comic pagination" and "Random button" must be turned on.
 | Next button               | The "Next" button image - "Comic pagination" must be turned on.
 | Latest button             | The "Latest" button image - "Comic pagination" must be turned on.
-
----
-
-| Option                    | Description                             | 
-| ------------------------- | --------------------------------------- |
+|                           | 
 | Header background         | The header background color.
 | Navigation background     | The navigation background color.
 | Navigation links          | The navigation links color.
@@ -37,14 +33,11 @@
 | Aside background          | The aside background color.
 | Aside text                | The aside text color.
 | Footer text               | The footer text color.
-
----
-
-| Option                    | Description                             | 
-| ------------------------- | --------------------------------------- |
+|                           | 
 | Layout                    | An option of two layouts.
 | Title font                | Select from 25 carefully chosen typefaces for titles.
 | Body font                 | Select from 20 carefully chosen typefaces for body text.
+|                           | 
 | Big header                | Makes the header image and navigation the full width of the screen.
 | Repeat header image       | Repeat the header background image - overwrites the top/center default.
 | Repeat background image   | Repeat the background image - overwrites the top/center default.
@@ -84,11 +77,7 @@
 | Show Powered by Tumblr    | Show/hide "Powered by Tumblr" in footer.
 | Show theme promotion      | Show/hide "Simple Webcomic Theme" link in footer.
 | Show RSS                  | Show/hide RSS link in footer.
-
----
-
-| Option                    | Description                             | 
-| ------------------------- | --------------------------------------- |
+|                           | 
 |Wrapper width              | Content width - 1080 is the default.
 |Header height              | Header image height - 280 is the default.
 |**First post URL**         | **The URL of your first post - needed if you are using "Comic pagination".**
@@ -100,3 +89,6 @@
 |Google Analytics ID        | Visitor analytics via Google - [http://www.google.com/analytics](http://www.google.com/analytics)
 |Clicky ID                  | Visitor analytics via Clicky - http://clicky.com
 |Username / URL             | If filled in a link will appear in the social link section of the aside.
+
+
+Note: **Bold items** are webcomic specific
