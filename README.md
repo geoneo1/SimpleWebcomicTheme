@@ -58,4 +58,4 @@ Optional:
 
 ---
 
-To Get a full breakdown of the options please check out: [SWC Theme Options](SWC_THEME_OPTIONS.md)
+To get a full breakdown of the options please check out: [SWC Theme Options](SWC_THEME_OPTIONS.md)
