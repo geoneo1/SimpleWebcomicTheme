@@ -86,6 +86,6 @@
 |Google Analytics ID        | Visitor analytics via Google - [http://www.google.com/analytics](http://www.google.com/analytics)
 |Clicky ID                  | Visitor analytics via Clicky - http://clicky.com
 |Username / URL             | If filled in a link will appear in the social link section of the aside.
-|Google Plus Username       | You will require a Google+ Custom URL [Getting Started with Google+ Custom URLs](http://goo.gl/9oRRRH)
+|Google Plus Username       | You will require a Google+ Custom URL - [Getting Started with Google+ Custom URLs](http://goo.gl/9oRRRH)
 
 **Bold items** are webcomic specific
