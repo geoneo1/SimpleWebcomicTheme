@@ -25,7 +25,8 @@ The SWC Theme allows you to upload your own images for the "First", "Last", "Nex
 The SWC Theme resizes gracefully regardless of the device it's viewed on. It's layout will adapt to any size browser, and looks great on tablets and smart phones.
 
 #####Social Media Links
-Link to 21 social media sites, and your personal website by simply inputting your username or URL.
+Link to 21 social media sites, and your personal website by simply inputting your username or URL. 
+_Note:_ For "Google Plus Username"	You will require a Google+ Custom URL - [Getting Started with Google+ Custom URLs](http://goo.gl/9oRRRH)
 
 #####Commenting
 The SWC Theme supports [Disqus](https://www.disqus.com) commenting systems. Simply paste your Disqus Shortname in the appropriate field.
