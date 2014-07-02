@@ -75,17 +75,18 @@
 | Show Powered by Tumblr    | Show/hide "Powered by Tumblr" in footer.
 | Show theme promotion      | Show/hide "Simple Webcomic Theme" link in footer.
 | Show RSS                  | Show/hide RSS link in footer.
-|Wrapper width              | Content width - 1080 is the default.
-|Header height              | Header image height - 280 is the default.
-|**First post URL**         | **The URL of your first post - needed if you are using "Comic pagination".**
-|Author                     | Author name - appears in the footer.
-|Instagram userid           | Needed to show your Instagram images in aside - [http://jelled.com/instagram/lookup-user-id](http://jelled.com/instagram/lookup-user-id)
-|Instagram count            | The amount of images shown in aside - 4 is the default.
-|Twitter count              | The amount of tweets shown in aside - 4 is the default.
-|Disqus shortname           | Disqus shortname is needed to activate comments - [https://disqus.com](https://disqus.com)
-|Google Analytics ID        | Visitor analytics via Google - [http://www.google.com/analytics](http://www.google.com/analytics)
-|Clicky ID                  | Visitor analytics via Clicky - http://clicky.com
-|Username / URL             | If filled in a link will appear in the social link section of the aside.
-|Google Plus Username       | You will require a Google+ Custom URL - [Getting Started with Google+ Custom URLs](http://goo.gl/9oRRRH)
+| Wrapper width             | Content width - 1080 is the default.
+| Header height             | Header/banner image height - 280 is the default.
+| **Comic pagination image height** | **Comic pagination image height - 24 is the default.**
+| **First post URL**        | **The URL of your first post - needed if you are using "Comic pagination".**
+| Author                    | Author name - appears in the footer.
+| Instagram userid          | Needed to show your Instagram images in aside - [http://jelled.com/instagram/lookup-user-id](http://jelled.com/instagram/lookup-user-id)
+| Instagram count           | The amount of images shown in aside - 4 is the default.
+| Twitter count             | The amount of tweets shown in aside - 4 is the default.
+| Disqus shortname          | Disqus shortname is needed to activate comments - [https://disqus.com](https://disqus.com)
+| Google Analytics ID       | Visitor analytics via Google - [http://www.google.com/analytics](http://www.google.com/analytics)
+| Clicky ID                 | Visitor analytics via Clicky - http://clicky.com
+| Username / URL            | If filled in a link will appear in the social link section of the aside.
+| Google Plus Username      | You will require a Google+ Custom URL - [Getting Started with Google+ Custom URLs](http://goo.gl/9oRRRH)
 
 **Bold items** are webcomic specific
