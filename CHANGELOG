@@ -1,4 +1,8 @@
-v4.0 [12 Jun 2013]
+v4.0 [3 Jul 2014]
+- Fixed the h2.title CSS
+- Fixed the pagination CSS
+
+v4.0 [2 Jul 2014]
 - Minor CSS changes
 - Added "Comic pagination image height" option
 - Updated SWC_THEME_OPTIONS.md
