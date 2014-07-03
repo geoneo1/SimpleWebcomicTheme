@@ -1162,8 +1162,8 @@ http://www.gnu.org/licenses/gpl-2.0.html
 				{/block:PreviousPage}
 
 				{block:PreviousPage}
-				{block:IfLatestButtonImage}<a href="/"><img src="{image:Latest Button}" alt="{PhotoAlt}"></a>{/block:IfLatestButtonImage}
-				{block:IfNotLatestButtonImage}<a href="/">Latest</a>{/block:IfNotLatestButtonImage}
+				{block:IfLatestButtonImage}<a href="{BlogURL}"><img src="{image:Latest Button}" alt="{PhotoAlt}"></a>{/block:IfLatestButtonImage}
+				{block:IfNotLatestButtonImage}<a href="{BlogURL}">Latest</a>{/block:IfNotLatestButtonImage}
 				{/block:PreviousPage}
 			</nav>
 			{/block:Pagination}
@@ -1193,8 +1193,8 @@ http://www.gnu.org/licenses/gpl-2.0.html
 				{/block:NextPost}
 
 				{block:NextPost}
-				{block:IfLatestButtonImage}<a href="/"><img src="{image:Latest Button}" alt="{PhotoAlt}"></a>{/block:IfLatestButtonImage}
-				{block:IfNotLatestButtonImage}<a href="/">Latest</a>{/block:IfNotLatestButtonImage}
+				{block:IfLatestButtonImage}<a href="{BlogURL}"><img src="{image:Latest Button}" alt="{PhotoAlt}"></a>{/block:IfLatestButtonImage}
+				{block:IfNotLatestButtonImage}<a href="{BlogURL}">Latest</a>{/block:IfNotLatestButtonImage}
 				{/block:NextPost}
 			</nav>
 			{/block:PermalinkPagination}
@@ -1237,7 +1237,7 @@ http://www.gnu.org/licenses/gpl-2.0.html
 		<section class="postscript">
 			<h4 class="title">{lang:About}</h4>
 			{block:ShowAvatar} 
-			<a href="/" title="{lang:Home}"><img class="user-avatar alignleft " src="{PortraitURL-128}"/></a>
+			<a href="{BlogURL}" title="{lang:Home}"><img class="user-avatar alignleft " src="{PortraitURL-128}"/></a>
 			{/block:ShowAvatar}
 
 			{block:Description}
