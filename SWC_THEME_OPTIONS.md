@@ -80,8 +80,8 @@
 | Show RSS                  | Show/hide RSS link in footer.
 | Wrapper width             | Content width - 1080 is the default.
 | Header height             | Header/banner image height - 280 is the default.
-| **Comic pagination image height** | **Comic pagination image height - 24 is the default.**
 | Photoset width            | Photoset width - 1280 is the default and maximum.
+| **Comic pagination image height** | **Comic pagination image height - 24 is the default.**
 | **First post URL**        | **The URL of your first post - needed if you are using "Comic pagination".**
 | Author                    | Author name - appears in the footer.
 | Instagram userid          | Needed to show your Instagram images in aside - [http://jelled.com/instagram/lookup-user-id](http://jelled.com/instagram/lookup-user-id)
