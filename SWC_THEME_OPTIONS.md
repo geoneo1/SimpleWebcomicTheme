@@ -52,6 +52,7 @@
 | **Clickable images**      | **Make the post image link to the next post.**
 | **Random button**         | **Show/hide the "Random" button  - "Comic pagination" only.**
 | Back to top button        | Show/hide the "back to top" button.
+| Large Photoset            | Overwites the defualt photoset layout, allowing the photos to be full width.
 | Post metadata             | Show/hide the post metadata.
 | Post author               | Show/hide the post author - useful for group blogs - hidden by default.
 | Post tags                 | Show/hide post tags.
@@ -78,6 +79,7 @@
 | Wrapper width             | Content width - 1080 is the default.
 | Header height             | Header/banner image height - 280 is the default.
 | **Comic pagination image height** | **Comic pagination image height - 24 is the default.**
+| Photoset width            | Photoset width - 1280 is the default and maximum.
 | **First post URL**        | **The URL of your first post - needed if you are using "Comic pagination".**
 | Author                    | Author name - appears in the footer.
 | Instagram userid          | Needed to show your Instagram images in aside - [http://jelled.com/instagram/lookup-user-id](http://jelled.com/instagram/lookup-user-id)
