@@ -1,5 +1,7 @@
 #SWC Theme Options
 
+**Bold items** are webcomic specific
+
 | Option                    | Description                             | 
 | ------------------------- | --------------------------------------- |
 | Title                     | The HTML-safe title of your blog.
@@ -52,7 +54,7 @@
 | **Clickable images**      | **Make the post image link to the next post.**
 | **Random button**         | **Show/hide the "Random" button  - "Comic pagination" only.**
 | Back to top button        | Show/hide the "back to top" button.
-| Large Photoset            | Overwites the defualt photoset layout, allowing the photos to be full width.
+| Large Photoset            | Overrides the defualt photoset layout, allowing the photos to be full width.
 | Post metadata             | Show/hide the post metadata.
 | Post author               | Show/hide the post author - useful for group blogs - hidden by default.
 | Post tags                 | Show/hide post tags.
@@ -90,5 +92,3 @@
 | Clicky ID                 | Visitor analytics via Clicky - http://clicky.com
 | Username / URL            | If filled in a link will appear in the social link section of the aside.
 | Google Plus Username      | You will require a Google+ Custom URL - [Getting Started with Google+ Custom URLs](http://goo.gl/9oRRRH)
-
-**Bold items** are webcomic specific
