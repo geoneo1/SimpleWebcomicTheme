@@ -1,7 +1,6 @@
 v4.0 [17 Dec 2014]
-- Changed margin to padding for .comic-pagination,.pagination
-- Updated webcomic_theme_4.0.html
-- Updated main.css 
+- Small CSS in main.css for ".comic-pagination, .pagination"
+- Updated main.css URL in webcomic_theme_4.0.html
 
 v4.0 [17 Dec 2014]
 - Added a "Large photoset" option
