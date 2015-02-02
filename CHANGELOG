@@ -1,4 +1,9 @@
 v4.0 [17 Dec 2014]
+- Changed margin to padding for .comic-pagination,.pagination
+- Updated webcomic_theme_4.0.html
+- Updated main.css 
+
+v4.0 [17 Dec 2014]
 - Added a "Large photoset" option
 - Added a "Photoset width" option
 - Hidden the First, Random and Last links on the Search and Tag result pages
