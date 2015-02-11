@@ -82,7 +82,7 @@
 | Header height             | Header/banner image height - 280 is the default.
 | Photoset width            | Photoset width - 1280 is the default and maximum.
 | **Comic pagination image height** | **Comic pagination image height - 24 is the default.**
-| **First post URL**        | **The URL of your first post - needed if you are using "Comic pagination".**
+| **First comic page URL**  | **The URL of your first comic page - needed if you are using "Comic pagination".**
 | Author                    | Author name - appears in the footer.
 | Instagram userid          | Needed to show your Instagram images in aside - [http://jelled.com/instagram/lookup-user-id](http://jelled.com/instagram/lookup-user-id)
 | Instagram count           | The amount of images shown in aside - 4 is the default.
