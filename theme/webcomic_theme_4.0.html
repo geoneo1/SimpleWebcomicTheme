@@ -196,7 +196,7 @@ http://www.gnu.org/licenses/gpl-2.0.html
 	<meta name="text:Header height" content="280">
 	<meta name="text:Photoset width" content="1280">
 	<meta name="text:Comic pagination image height" content="24">
-	<meta name="text:First post URL" content="">
+	<meta name="text:First comic page URL" content="">
 
 	<meta name="text:Author" content="">
 
@@ -1164,11 +1164,13 @@ http://www.gnu.org/licenses/gpl-2.0.html
 		{block:IfComicPagination}
 			{block:Pagination}
 			<nav class="comic-pagination">
+				{block:IfFirstComicPageURL}
 				{block:NextPage}
-				{block:IfFirstButtonImage}<a class="first-button" href="/page/{TotalPages}"><img src="{image:First Button}" alt="{PhotoAlt}"></a>{/block:IfFirstButtonImage}
+				{block:IfFirstButtonImage}<a class="first-button" href="{text:First comic page URL}"><img src="{image:First Button}" alt="{PhotoAlt}"></a>{/block:IfFirstButtonImage}
 				
-				{block:IfNotFirstButtonImage}<a class="first-button" href="/page/{TotalPages}">First</a>{/block:IfNotFirstButtonImage}
+				{block:IfNotFirstButtonImage}<a class="first-button" href="{text:First comic page URL}">First</a>{/block:IfNotFirstButtonImage}
 				{/block:NextPage}
+				{/block:IfFirstComicPageURL}
 
 
 				{block:NextPage}
@@ -1195,12 +1197,12 @@ http://www.gnu.org/licenses/gpl-2.0.html
 
 			{block:PermalinkPagination}
 			<nav class="comic-pagination permalink-pagination pagination">
-				{block:IfFirstPostURL}
+				{block:IfFirstComicPageURL}
 				{block:PreviousPost}
-				{block:IfFirstButtonImage}<a class="first-button" href="{text:First Post URL}"><img src="{image:First Button}" alt="{PhotoAlt}"></a>{/block:IfFirstButtonImage}
-				{block:IfNotFirstButtonImage}<a class="first-button" href="{text:First Post URL}">First</a>{/block:IfNotFirstButtonImage}
+				{block:IfFirstButtonImage}<a class="first-button" href="{text:First comic page URL}"><img src="{image:First Button}" alt="{PhotoAlt}"></a>{/block:IfFirstButtonImage}
+				{block:IfNotFirstButtonImage}<a class="first-button" href="{text:First comic page URL}">First</a>{/block:IfNotFirstButtonImage}
 				{/block:PreviousPost}
-				{/block:IfFirstPostURL}
+				{/block:IfFirstComicPageURL}
 
 				{block:PreviousPost}
 				{block:IfPreviousButtonImage}<a class="previous-button" href="{PreviousPost}"><img src="{image:Previous Button}" alt="{PhotoAlt}"></a>{/block:IfPreviousButtonImage}
