@@ -1,3 +1,8 @@
+v4.0 [11 Feb 2015]
+- Changed "First post URL" to "First comic page URL" across the theme
+- Changed comic pagination for pages, hiding the "First" button if "First comic page URL" is empty
+- Updated SWC_THEME_OPTIONS.md
+
 v4.0 [02 Feb 2015]
 - Small CSS in main.css for ".comic-pagination, .pagination"
 - Updated main.css URL in webcomic_theme_4.0.html
