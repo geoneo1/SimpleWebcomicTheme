@@ -1,3 +1,6 @@
+v4.0 [25 Feb 2015]
+- added "max-width: 100%;" to "nav#access h5.title" CSS
+
 v4.0 [11 Feb 2015]
 - Changed "First post URL" to "First comic page URL" across the theme
 - Changed comic pagination for pages, hiding the "First" button if "First comic page URL" is empty
