@@ -830,22 +830,21 @@ http://www.gnu.org/licenses/gpl-2.0.html
 				{/block:HighRes}
 				{/block:IndexPage}
 
-				{block:PermalinkPagination}
-				<figure class="photo-item" {block:HighRes}style="display:none"{/block:HighRes}>
-					{block:NextPost}<a href="{NextPost}">{/block:NextPost}
+				{block:PermalinkPage}
+				<figure class="photo-item correct" {block:HighRes}style="display:none"{/block:HighRes}>
+					{block:PermalinkPagination}{block:NextPost}<a href="{NextPost}">{/block:NextPost}{/block:PermalinkPagination}
 					<img src="{PhotoURL-500}" alt="{PhotoAlt}">
-					{block:NextPost}</a>{/block:NextPost}
-
+					{block:PermalinkPagination}{block:NextPost}</a>{/block:NextPost}{/block:PermalinkPagination}
 				</figure>
 
 				{block:HighRes}
-				<figure class="photo-hires-item">
-					{block:NextPost}<a href="{NextPost}">{/block:NextPost}
+				<figure class="photo-hires-item correct">
+					{block:PermalinkPagination}{block:NextPost}<a href="{NextPost}">{/block:NextPost}{/block:PermalinkPagination}
 					<img src="{PhotoURL-HighRes}" alt="{PhotoAlt}">
-					{block:NextPost}</a>{/block:NextPost}
+					{block:PermalinkPagination}{block:NextPost}</a>{/block:NextPost}{/block:PermalinkPagination}
 				</figure>
 				{/block:HighRes}
-				{/block:PermalinkPagination}
+				{/block:PermalinkPage}
 				{/block:IfClickableImage}
 
 				{block:IfComicPagination}
