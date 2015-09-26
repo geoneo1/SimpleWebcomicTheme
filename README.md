@@ -49,7 +49,7 @@ _Be aware_ that your twitter feed, blogs you follow, and post you like will not 
 Converting your Tumblr blog to a webcomic can be achieved in just _two_ simple steps: 
 
 1. In the customization panel, you will need to turn on “Comic Pagination”. 
-2. **Go to _Advance options_ and set "Posts per page to 1**. 
+2. **Go to _Advance options_ and set “Posts per page” to 1**. 
 
 Once you have published your first post you _should_ copy and paste the post permalink into the "First Post URL" field. This ensures the comic pagination works correctly.
 
