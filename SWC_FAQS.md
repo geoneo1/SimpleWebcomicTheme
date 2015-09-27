@@ -4,7 +4,7 @@
 - [How do you properly install your theme?](#InstallTheme)
 - [The comic pagination is not showing up](#ComicPagination)
 - [The comic pagination buttons are appearing very small](#ComicPaginationSmall)
-- [Is there a way to add a link to my first page in the navigation bar?](#PageLink)
+- [Is there a way to add a link to my first comic page in the navigation bar?](#PageLink)
 - [How do I show the “Ask” link?](#AskLink)
 
 #####Trouble Shooting
@@ -59,14 +59,14 @@ In order for the comic pagination to appear, you need to have more than one post
 You can increase the height of your comic pagination images by changing the number in the "Comic pagination image height" field. The default is 24(px). Once you increase that, they will display larger.
 
 <a name="PageLink">
-###Is there a way to add a link to my first page in the navigation bar? 
+###Is there a way to add a link to my first comic page in the navigation bar? 
 1. Go to the Edit theme area
 2. Scroll all the way down to the bottom and click “Add a Page” button
 3. Click on the “Standard Layout” dropdown and select “Redirect”
 4. Click the “Show a link to this page” toggle button
 5. Once that is on you will be able to name your link
 6. In the first field you can choose a custom URL
-8. Then in the “Redirect to” field paste your first post URL
+8. Then in the “Redirect to” field paste the URL of your first comic page
 
 <a name="AskLink">
 ###How do I show the “Ask” link?
