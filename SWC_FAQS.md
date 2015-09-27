@@ -101,10 +101,10 @@ Make sure that the “Post metadata" option is turned on. The Post metadata incl
 
 If you are using one large image:
 
-3. Make sure “Repeat header” image is off
-4. You can adjust "Header height” option to better suit your image
+- Make sure “Repeat header” image is off
+- You can adjust "Header height” option to better suit your image
 
-* Note: If you are using “Big header” It will override the Header height option.
+*Note: If you are using “Big header” It will override the Header height option.
 
 <a name="GoogleLink">
 ###My Google+ link is not going to the correct URL
