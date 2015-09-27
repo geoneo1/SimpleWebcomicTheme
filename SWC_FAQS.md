@@ -31,6 +31,8 @@
 
 ---
 
+######Set Up
+
 <a name="InstallTheme">
 ###How do you properly install your theme?
 First, start by going to: [https://www.tumblr.com/theme/39018](https://www.tumblr.com/theme/39018)
@@ -75,6 +77,8 @@ The theme does have an ask feature, but the setting is hidden away in the genera
 In your tumblr dashboard, in the top right you should see a user icon (next to the lightning bolt). Click on that and select “Edit appearance”. The 4th option down is “Ask”, Make sure “Let people ask questions” is activated. Once it is, the link should appear in the theme automatically.
 
 ---
+
+######Trouble Shooting
 
 <a name="FirstButtonURL">
 ###The “First” button is going to the wrong page
@@ -129,6 +133,8 @@ If you prefer to keep the background as is and change the icon colour instead, p
 After adding the your Google Analytics tracking code in your theme options, it may take 24 hours for data to appear in your reports.
 
 ---
+
+######Design
 
 <a name="CenterNavigation">
 ###How can I center the navigation links?
