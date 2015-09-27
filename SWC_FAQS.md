@@ -24,7 +24,7 @@
 - [How do I increase the content width?](#ContentWidth)
 - [Is there a way to make post show in chronological order?](#ChronologicalOrder)
 - [Is there a way to add Disqus on the homepage?](#Disqus)
-- [How can I have the images on my custom page the same as the wrapper widths?](#PageImageWidth)
+- [How can I have the images width on my custom page the same as the wrapper width?](#PageImageWidth)
 - [How do I change the clicked-link colour?](#VisitedLinkColour)
 - [How can I enlarge the post author portrait in Simple Webcomic to make it bigger than 24x24?](#PostAvatarSize)
 - [Is there a way to make the “About” section in the footer wider?](#WiderFooterSection)
@@ -92,7 +92,7 @@ Furthermore, as I changed the field name from “First post URL” to “First c
 
 <a name="ShowShareButtons">
 ###I can't see my share buttons
-Make sure that the “Post metadata" option is turned on. The Post metadata includes the *author*, *time stamp*, *tags*, *notes*, *comment count*, *content source*, as well as all the *share options*. The theme has options to individual hide these features.
+Make sure that the “Post metadata" option is turned on. The Post metadata includes the *author*, *time stamp*, *tags*, *notes*, *comment count*, *content source*, as well as all the *share options*. The theme has options to individually hide these features.
 
 <a name="ShowBannerImage">
 ###My banner image is not showing
@@ -100,18 +100,21 @@ Make sure that the “Post metadata" option is turned on. The Post metadata incl
 2. Make sure “Show header image" is on
 
 If you are using one large image:
+
 3. Make sure “Repeat header” image is off
 4. You can adjust "Header height” option to better suit your image
-* Note: If you are using “Big header” It will override the Header height option.*
+
+* Note: If you are using “Big header” It will override the Header height option.
 
 <a name="GoogleLink">
 ###My Google+ link is not going to the correct URL
-For “Google Plus Username” to work you will require a *Google+ Custom URL*. Please take a look at [Getting Started with Google+ Custom URLs] (http://goo.gl/9oRRRH)
+For “Google Plus Username” to work you will require a *Google+ Custom URL*. Please take a look at [Getting Started with Google+ Custom URLs] (http://goo.gl/9oRRRH).
 
 <a name="SocialLinksColours">
-###My “Show Social Links” is on, but I can't see the logo (picture) of each social links
+###My “Show social links” is on, but I can't see the logo (picture) of each social links
 
 The background of the social links are determined your “Accent color”, the icons are determined by your “Aside text” colour, if these two are the same colour, you will not be able to see the icons. However, you can change the colour of the background. 
+
 Go to the Edit theme area, scroll to the bottom and click “Advanced options”, then copy and paste the following into the “Add custom CSS” field:
 ```
 .social-links ul li a span.ico { background-color: #222; }
@@ -185,7 +188,7 @@ I usually advise people to create “Read from the beginning” link in the main
 
 <a name="Disqus">
 ###Is there a way to add Disqus on the homepage?
-Disqus comments only appear on the individual post pages because they require a unique URL. If they were to appear on the homepage, when you add a new post, any previous comments will still be visible. Which may result in unrelated comments. 
+Disqus comments only appear on the individual posts because they require a unique URL. If they were to appear on the homepage, when you add a new post, any previous comments will still be visible. Which may result in unrelated comments. 
 
 If you still want it to appear on the homepage, there is a way but it would mean the comments will show on all pages, including any custom pages. 
 
@@ -195,12 +198,12 @@ If you still would like to add comments to pages:
 2. Click on “Edit HTML”
 3. Press CTRL+F, a search box should appear
 4. Search for `<!-- Disqus -->`
-5. You will see that 2 lines above it has `{block:PermalinkPagination}` - that line of code limits it to just individual post pages. You must remove that line.
-6. You must also remove it's closing counterpart `{/block:PermalinkPagination}` which you will find just at the bottom of that section of code, just above `{block:IfPostNotes}` 
+5. You will see that 2 lines above it has `{block:PermalinkPagination}` - that line of code limits it to just individual post pages. You must remove that line
+6. You must also remove its closing counterpart `{/block:PermalinkPagination}` which you will find just at the bottom of that section of code, just above `{block:IfPostNotes}` 
 7. Save and exit
 
 <a name="PageImageWidth">
-###How can I have the images on my custom page the same as the wrapper widths? 
+###How can I have the images width on my custom page the same as the wrapper width? 
 The content area of a page is 60% width of the full wrapper. In order to change that go to the Edit theme area, scroll to the bottom and click “Advanced options”, then copy and paste the following into the “Add custom CSS” field:
 ```
 article > .caption, .alternative article > caption { width: 100%; }
@@ -232,7 +235,7 @@ article > .caption > figure,
   .alternative article > .caption > h2 { width: 90%; }
 }
 ```
-Also, if you upload an image from the tumblr page editor, it will automatically resize it to 500px width. The only way around that is if you upload the image somewhere else first and then in the “HTML edit” mode paste the correct image URL. You will also need to wrap the image in a `<h1>` tag. If you do not do this, then tumblr will automatically wrap it in a `<p>` which we don’t want.  
+If you upload an image using the tumblr page editor, it will automatically resize it to 500px width. The only way around that is if you upload the image somewhere else first and then in the “HTML edit” mode paste the correct image URL. You will also need to wrap the image in a `<h1>` tag. If you do not do this, then tumblr will automatically wrap it in a `<p>` which we don’t want.  
 
 <a name="VisitedLinkColour">
 ###How do I change the clicked-link color? 
