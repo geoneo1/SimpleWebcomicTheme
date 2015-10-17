@@ -141,10 +141,10 @@ After adding the your Google Analytics tracking code in your theme options, it m
 ###Is there a way for the header and aside to have a transparent background?
 Go to the Edit theme area, scroll to the bottom and click “Advanced options”, then copy and paste the following into the “Add custom CSS” field:
 ```
-// This removes the background from the Header, Aside and Footer
 header#masthead, .alternative aside, .alternative footer.sub-basement { background-color: transparent; }
-
-//This removes the shadow from the Header (should you want to)
+```
+This removes the shadow from the Header (should you want to):
+```
 header#masthead > div { box-shadow: none; }
 ```
 
