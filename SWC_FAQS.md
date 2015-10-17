@@ -17,8 +17,9 @@
 - [Why does my Google Analytics status say “Tracking code not verified”?](#GoogleAnalyticsStatus)
 
 #####Design
+- [Is there a way for the header and aside to have a transparent background?](#TransparentHeader)
 - [How can I center the navigation links?](#CenterNavigation)
-- [How do I get rid of the shadow under the header?](#HeaderShadow)
+- [How do I get rid of the shadow under the navigation?](#NavigationShadows)
 - [How do I reduce the space above and below the comic pagination?](#ComicPaginationSpace)
 - [How do I reduce the top padding in the content area?](#ContentTopPadding)
 - [How do I increase the content width?](#ContentWidth)
@@ -136,6 +137,17 @@ After adding the your Google Analytics tracking code in your theme options, it m
 
 ######Design
 
+<a name="TransparentHeader">
+###Is there a way for the header and aside to have a transparent background?
+Go to the Edit theme area, scroll to the bottom and click “Advanced options”, then copy and paste the following into the “Add custom CSS” field:
+```
+// This removes the background from the Header, Aside and Footer
+header#masthead, .alternative aside, .alternative footer.sub-basement { background-color: transparent; }
+
+//This removes the shadow from the Header (should you want to)
+header#masthead > div { box-shadow: none; }
+```
+
 <a name="CenterNavigation">
 ###How can I center the navigation links?
 Go to the Edit theme area, scroll to the bottom and click “Advanced options”, then copy and paste the following into the “Add custom CSS” field:
@@ -143,8 +155,8 @@ Go to the Edit theme area, scroll to the bottom and click “Advanced options”
 nav#access .wrapper { text-align: center; }
 ```
 
-<a name="HeaderShadow">
-###How do I get rid of the shadow under the header?
+<a name="NavigationShadow">
+###How do I get rid of the shadow under the navigation?
 Go to the Edit theme area, scroll to the bottom and click “Advanced options”, then copy and paste the following into the “Add custom CSS” field:
 ```
 nav#access { box-shadow: none !important; }
