@@ -1,3 +1,6 @@
+v4.0 [01 Mar 2016]
+- Changed nav#access to "z-index: 99;"
+
 v4.0 [28 Jul 2015]
 - Fixed the "Clickable image" error for the single post page
 
