@@ -436,7 +436,11 @@ http://www.gnu.org/licenses/gpl-2.0.html
 	aside { background-repeat:repeat; background-size: auto; }
 	{/block:IfRepeatAsideImage}
 
-	aside section .title { font-family: {select:Body Font}; }	
+	aside section .title { font-family: {select:Body Font}; }
+	
+	aside section.following ul { padding-bottom: 1em; }
+	
+	aside section.following ul li.visible { display: inline-block !important; }
 	
 	.social-links ul li a span.ico { background-color: {AccentColor}; }
 
@@ -631,11 +635,17 @@ http://www.gnu.org/licenses/gpl-2.0.html
 			// ===
 			
 			// Limit Following Avatars
+			$('.showall').hide();
 			$('.following li').each(
-				function(index,element) {
-					if(index >= {text:Following Count}) $(element).hide();
-				}
+			function(index,element) {
+				if(index >= {text:Following Count}) $(element).hide();
+				if(index >= {text:Following Count}) $('.showall').show();
+			}
 			)
+			$('.showall').click(function() {
+				$('.following li').toggleClass("visible", 1000);
+				return false;
+			});
 			// ===
 			
 			// Back to top button
@@ -1407,6 +1417,7 @@ http://www.gnu.org/licenses/gpl-2.0.html
 					</li>
 					{/block:Followed}
 				</ul>
+				<div class="showall end"><a href="#">Show all</a></div>
 			</section>
 		{/block:Following}
 		{/block:IfShowBlogsIFollow}
