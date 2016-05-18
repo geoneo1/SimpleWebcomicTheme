@@ -203,6 +203,7 @@ http://www.gnu.org/licenses/gpl-2.0.html
 	<meta name="text:Instagram userId" content="http://jelled.com/instagram/lookup-user-id"/>
 	<meta name="text:Instagram count" content="4"/>
 	<meta name="text:Twitter count" content="4">
+	<meta name="text:Following count" content="8">
 	<meta name="text:Disqus shortname" content="">
 	<meta name="text:Google Analytics ID" content=""/>
 	<meta name="text:Clicky ID" content=""/>
@@ -622,7 +623,21 @@ http://www.gnu.org/licenses/gpl-2.0.html
 				return false;
 			});
 			// ===
-
+			
+			// Hide First button on First comic page
+			if(window.location.href == "{text:First comic page URL}") {
+				$(".comic-pagination .first-button").hide();
+			}
+			// ===
+			
+			// Limit Following Avatars
+			$('.following li').each(
+				function(index,element) {
+					if(index >= {text:Following Count}) $(element).hide();
+				}
+			)
+			// ===
+			
 			// Back to top button
 			var btt_button = $("#btt");
 			btt_button.click(function() {
