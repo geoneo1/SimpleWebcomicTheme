@@ -83,9 +83,9 @@ In your tumblr dashboard, in the top right you should see a user icon (next to t
 
 <a name="FirstButtonURL">
 ###The “First” button is going to the wrong page
-You must add the *post URL* in the “First comic page URL” field, not the page URL.
+You must add the *post URL* in the “First comic page URL” field, not the *page URL*.
 
-Go to your first comic page and click the share icon (the arrow coming out of the box). The bottom URL is the short URL of the post, just copy and paste that into the "First comic page URL" field. Then save.
+Go to your first comic page and click on either the date or the the link icon. Then just copy the URL and paste it into the "First comic page URL" field. Then save.
 
 <a name="FirstButtonDisappeared">
 ###My “First” button has disappeared
