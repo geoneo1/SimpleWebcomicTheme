@@ -87,7 +87,7 @@
 | Instagram userid          | Needed to show your Instagram images in aside - [http://jelled.com/instagram/lookup-user-id](http://jelled.com/instagram/lookup-user-id)
 | Instagram count           | The amount of images shown in aside - 4 is the default.
 | Twitter count             | The amount of tweets shown in aside - 4 is the default.
-| Following count           | The amount of ollowing avatars shown in aside - 8 is the default.
+| Following count           | The amount of tumblr blogs you follow shown in aside - 8 is the default.
 | Disqus shortname          | Disqus shortname is needed to activate comments - [https://disqus.com](https://disqus.com)
 | Google Analytics ID       | Visitor analytics via Google - [http://www.google.com/analytics](http://www.google.com/analytics)
 | Clicky ID                 | Visitor analytics via Clicky - http://clicky.com
