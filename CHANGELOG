@@ -1,3 +1,9 @@
+v4.0 [01 May 2016]
+- Added "Following count" feature
+- The "First" button now hides if the post URL matches the "First comic page URL" content
+- Updated SWC_THEME_OPTIONS.md
+- Updated SWC_FAQS.md
+
 v4.0 [01 Mar 2016]
 - Changed nav#access to "z-index: 99;"
 - Removed Modernizr
