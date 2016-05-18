@@ -1,6 +1,7 @@
 v4.0 [01 May 2016]
 - Added "Following count" feature
 - The "First" button now hides if the post URL matches the "First comic page URL" content
+- Added new Instagram icon to the social links
 - Updated SWC_THEME_OPTIONS.md
 - Updated SWC_FAQS.md
 
