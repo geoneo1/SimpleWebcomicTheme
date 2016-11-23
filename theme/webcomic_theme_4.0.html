@@ -44,7 +44,7 @@ http://www.gnu.org/licenses/gpl-2.0.html
 
 	<link rel="stylesheet" href="http://static.tumblr.com/gyycyeo/eIAn34gig/normalize.css">
 	<link rel="stylesheet" href="http://static.tumblr.com/sdujjmx/Ax5o7do52/icomoon.io.css">
-	<link rel="stylesheet" href="http://static.tumblr.com/gyycyeo/EwYnj5kon/main.css">
+	<link rel="stylesheet" href="http://static.tumblr.com/sdujjmx/aUKoh3ht0/main.css">
 
 	<!-- Google Fonts -->
 	<link href='http://fonts.googleapis.com/css?family={select:Body Font}:700,700italic,400italic,400|{select:Title Font}:400,300,700' rel='stylesheet' type='text/css'>
@@ -199,9 +199,9 @@ http://www.gnu.org/licenses/gpl-2.0.html
 	<meta name="text:First comic page URL" content="">
 
 	<meta name="text:Author" content="">
-
-	<meta name="text:Instagram userId" content="http://jelled.com/instagram/lookup-user-id"/>
-	<meta name="text:Instagram count" content="4"/>
+	<meta name="text:Instagram userId" content="https://smashballoon.com/instagram-feed/find-instagram-user-id/"/>
+	<meta name="text:Instagram access token" content="http://geoneo.co.uk/instagram" />
+	<meta name="text:Instagram photo count" content="8"/>
 	<meta name="text:Twitter count" content="4">
 	<meta name="text:Following count" content="8">
 	<meta name="text:Disqus shortname" content="">
@@ -280,18 +280,18 @@ http://www.gnu.org/licenses/gpl-2.0.html
 	/*  $GROUPEDCOLORS
 	_____________________________________ */
 
-	a:visited, section#search #search-form input:focus, article > h1.title a:link, article.answer .asker-question span.asker a:link, 
+  section#search #search-form input:focus, article > h1.title a:link, article.answer .asker-question span.asker a:link, 
 	article .post-author a:link, article.link .title a, footer.metadata a:hover, .pop-up-box, .pop-up-box .title, 
 	.share-links a { color: {color:Body Text}; }
 
-	a:link, .pagination > a:hover, .comic-pagination > a:hover, article > h1.title a:hover, 
+	a:link,	p a:visited, .pagination > a:hover, .comic-pagination > a:hover, article > h1.title a:hover, 
 	article.answer .asker-question span.asker a:hover, article .post-author a:hover, article.link a:hover, 
 	footer.metadata .tags a:hover, footer.metadata ul.post-meta a:hover { color: {AccentColor}; }
 
 	section#search #search-form input, aside section .end a, .pagination > a, .comic-pagination > a, 
 	article.link .host a, footer.metadata a { color: {color:Meta Text}; }
 
-	aside, aside section .title, .social-links ul li a, aside a:visited, aside section#twitter ul li a { color: {color:Aside Text}; }
+	aside, aside section .title, .social-links ul li a, aside section#twitter ul li a { color: {color:Aside Text}; }
 
 	/*  $HEADER
 	_____________________________________ */
@@ -534,8 +534,7 @@ http://www.gnu.org/licenses/gpl-2.0.html
 	<script src="http://ie7-js.googlecode.com/svn/version/2.1(beta4)/IE9.js"></script>
 	<![endif]-->
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
-	<script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-instagram/0.2.2/jquery.instagram.min.js"></script>
-	
+
 	<script>
 	var SWCTheme = new function() {
 		var win, body, doc, $;
@@ -644,6 +643,9 @@ http://www.gnu.org/licenses/gpl-2.0.html
 			)
 			$('.showall').click(function() {
 				$('.following li').toggleClass("visible", 1000);
+	            $('.showall a').text(function(i, text){
+                    return text === "Show all" ? "Close" : "Show all";
+                })		
 				return false;
 			});
 			// ===
@@ -806,7 +808,7 @@ http://www.gnu.org/licenses/gpl-2.0.html
 			</h2>
 		{/block:SearchPage}
 
-		{block:Posts}
+		{block:Posts inlineMediaWidth="1280" inlineNestedMediaWidth="1280"}
 		<article class="post postid-{PostID} {PostType} {block:RebloggedFrom}reblogged{/block:RebloggedFrom}">
 
 			{block:Text}
@@ -1397,7 +1399,7 @@ http://www.gnu.org/licenses/gpl-2.0.html
 		{block:Likes}
 			<section class="likes">
 				<h4 class="title">{lang:Likes}</h4>
-				{Likes limit="1" summarize="100" width="150"}
+				{Likes limit="1" summarize="100" width="250"}
 				<div class="end"><a href="http://www.tumblr.com/liked/by/{Name}">
 				{lang:More liked posts}
 				</a></div>
@@ -1426,14 +1428,16 @@ http://www.gnu.org/licenses/gpl-2.0.html
 		{block:IfInstagramUserId}
 		<section class="instagram-widget">
 		<h4 class="title">Instagram</h4>
-		<div id="instagram"></div>
+		<div id="instafeed"></div>
+		<script type="text/javascript" src="http://static.tumblr.com/sdujjmx/kuooh3d3g/instafeed.min.js"></script>
 		<script type="text/javascript">
-			$("#instagram").instagram({
-				userId: '{text:Instagram userId}',
-				clientId: '630c615eef464dd392e471bb09c37ca3',
-				image_size:'thumbnail',
-				show: {text:Instagram Count}
-		    });
+			var userFeed = new Instafeed({
+                get: 'user',
+                userId: '{text:Instagram userId}',
+                accessToken: '{text:Instagram access token}',
+                limit: {text:Instagram photo count}
+            });
+            userFeed.run();
 		</script>
 		</section>
 		{/block:IfInstagramUserId}
