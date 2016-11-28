@@ -1,3 +1,8 @@
+v4.0 [28 Nov 2016]
+- Small CSS change for ".comic-pagination, .pagination"
+- Updated theme/main.css
+- Updated theme/webcomic_theme_4.0.html
+
 v4.0 [23 Nov 2016]
 - Fixed the Instagram feed
 - Text post now display 1280px images
