@@ -85,7 +85,7 @@
 | **First comic page URL**  | **The URL of your first comic page - needed if you are using "Comic pagination".**
 | Author                    | Author name - appears in the footer.
 | Instagram userid          | Needed to show your Instagram images in aside - You can get it from [https://smashballoon.com/instagram-feed/find-instagram-user-id](https://smashballoon.com/instagram-feed/find-instagram-user-id)
-| Instagram access token    | Needed to show your Instagram images in aside - You can get it from [http://geoneo.co.uk/instagram](hhttp://geoneo.co.uk/instagram)
+| Instagram access token    | Needed to show your Instagram images in aside - You can get it from Pixel Union’s [Instagram authorization tool]. [http://geoneo.co.uk/instagram](http://instagram.pixelunion.net/)
 | Instagram photo count     | The amount of images shown in aside - 8 is the default.
 | Twitter count             | The amount of tweets shown in aside - 4 is the default.
 | Following count           | The amount of tumblr blogs you follow shown in aside - 8 is the default.
