@@ -47,7 +47,7 @@ http://www.gnu.org/licenses/gpl-2.0.html
 	<link rel="stylesheet" href="http://static.tumblr.com/sdujjmx/0GZohczt7/main.css">
 
 	<!-- Google Fonts -->
-	<link href='http://fonts.googleapis.com/css?family={select:Body Font}:700,700italic,400italic,400|{select:Title Font}:400,300,700' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family={text:Google Web Font name}:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i' rel='stylesheet' type='text/css'>
 
 {block:Hidden}
 
@@ -76,73 +76,13 @@ http://www.gnu.org/licenses/gpl-2.0.html
 	<meta name="color:Aside text" content="#FFFFFF">
 	<meta name="color:Footer text" content="#666666">
 
+    <!-- DEFAULT FONTS -->
+    <meta name="font:Heading" content="Sofia Pro, Helvetica, sans-serif"/>
+    <meta name="font:Body" content="Sofia Pro, Helvetica, sans-serif"/>
+        
 	<!-- Custom Layout -->
 	<meta name="select:Layout" content="regular" title="Regular">
 	<meta name="select:Layout" content="alternative" title="Alternative">
-
-	<!-- Custom Fonts - Google Fonts -->
-	<meta name="select:Title font" content="Alegreya" title="Alegreya">
-	<meta name="select:Title font" content="Alegreya Sans" title="Alegreya Sans">
-
-	<meta name="select:Title font" content="Merriweather" title="Merriweather">
-	<meta name="select:Title font" content="Merriweather Sans" title="Merriweather Sans">
-
-	<meta name="select:Title font" content="Quattrocento" title="Quattrocento">  
-	<meta name="select:Title font" content="Quattrocento Sans" title="Quattrocento Sans"> 
-
-	<meta name="select:Title font" content="PT Serif" title="PT Serif">
-	<meta name="select:Title font" content="PT Sans Narrow" title="PT Sans Narrow">
-	<meta name="select:Title font" content="PT Sans" title="PT Sans">
-
-	<meta name="select:Title font" content="Roboto Condensed" title="Roboto Condensed">     
-	<meta name="select:Title font" content="Roboto Slab" title="Roboto Slab">
-	<meta name="select:Title font" content="Roboto" title="Roboto">
-
-	<meta name="select:Title font" content="Droid Serif" title="Droid Serif">
-	<meta name="select:Title font" content="Droid Sans" title="Droid Sans">
-
-	<meta name="select:Title font" content="Open Sans Condensed" title="Open Sans Condensed">
-	<meta name="select:Title font" content="Open Sans" title="Open Sans">
-
-	<meta name="select:Title font" content="Source Sans Pro" title="Source Sans Pro">
-	<meta name="select:Title font" content="Titillium Web" title="Titillium Web">
-	<meta name="select:Title font" content="Libre Baskerville" title="Libre Baskerville">
-	<meta name="select:Title font" content="Lora" title="Lora">
-	<meta name="select:Title font" content="Vollkorn" title="Vollkorn">
-	<meta name="select:Title font" content="Neuton" title="Neuton">
-	<meta name="select:Title font" content="Montserrat" title="Montserrat">  
-	<meta name="select:Title font" content="Playfair Display" title="Playfair Display">  
-	<meta name="select:Title font" content="Abril Fatface" title="Abril Fatface">
-
-	<meta name="select:Body font" content="Alegreya" title="Alegreya">
-	<meta name="select:Body font" content="Alegreya Sans" title="Alegreya Sans">
-
-	<meta name="select:Body font" content="Merriweather" title="Merriweather">
-	<meta name="select:Body font" content="Merriweather Sans" title="Merriweather Sans">
-
-	<meta name="select:Body font" content="Quattrocento" title="Quattrocento">    
-	<meta name="select:Body font" content="Quattrocento Sans" title="Quattrocento Sans">  
-
-	<meta name="select:Body font" content="PT Serif" title="PT Serif">
-	<meta name="select:Body font" content="PT Sans" title="PT Sans">  
-
-	<meta name="select:Body font" content="Roboto" title="Roboto">
-
-	<meta name="select:Body font" content="Droid Serif" title="Droid Serif">
-	<meta name="select:Body font" content="Droid Sans" title="Droid Sans">          
-
-	<meta name="select:Body font" content="Open Sans" title="Open Sans">
-
-	<meta name="select:Body font" content="Source Sans Pro" title="Source Sans Pro">
-	<meta name="select:Body font" content="Lato" title="Lato">
-	<meta name="select:Body font" content="Titillium Web" title="Titillium Web">
-	<meta name="select:Body font" content="Anonymous Pro" title="Anonymous Pro">  
-
-	<meta name="select:Body font" content="Libre Baskerville" title="Libre Baskerville">
-	<meta name="select:Body font" content="Vollkorn" title="Vollkorn">    
-	<meta name="select:Body font" content="Neuton" title="Neuton"> 
-	<meta name="select:Body font" content="Lora" title="Lora">     
-	<!-- /Custom Fonts - Google Fonts -->
 
 	<!-- Booleans -->
 	<meta name="if:Repeat background image" content="0">
@@ -197,6 +137,7 @@ http://www.gnu.org/licenses/gpl-2.0.html
 	<meta name="text:Photoset width" content="1280">
 	<meta name="text:Comic pagination image height" content="24">
 	<meta name="text:First comic page URL" content="">
+	<meta name="text:Google Web Font name" content="">
 
 	<meta name="text:Author" content="">
 	<meta name="text:Instagram userId" content="https://smashballoon.com/instagram-feed/find-instagram-user-id/"/>
@@ -243,7 +184,8 @@ http://www.gnu.org/licenses/gpl-2.0.html
 	_______________________________________________________ */
 
 	body { 
-	font: 1em/1.75em  {select:Body Font}; 
+	font: 1em/1.75em {font:Body};
+	font-family: {text:Google Web Font name}; 
 	color: {color:Body Text};
 	background: {BackgroundColor};
 	}
@@ -265,8 +207,7 @@ http://www.gnu.org/licenses/gpl-2.0.html
 	.wrapper main {	background-color: {color:Content Background}; }
 
 	h1, h2, h3, h4, h5, h6 { 
-		font: 2em/1.25em {select:Title Font}; 
-		color: {color:Body Text};
+		font: 2em/1.25em {font:Heading};
 	}
 
 	h2 { font-size: 1.75em }
@@ -379,7 +320,8 @@ http://www.gnu.org/licenses/gpl-2.0.html
 		-o-transition:      all 0.5s ease;
 		transition:         all 0.5s ease;
 
-		color: {TitleColor}; 
+		font: {TitleFontWeight} 1em/1em {TitleFont};
+		color: {TitleColor};
 	}
 	nav#access h5.title a:hover { 
 		text-decoration: none;
@@ -436,7 +378,7 @@ http://www.gnu.org/licenses/gpl-2.0.html
 	aside { background-repeat:repeat; background-size: auto; }
 	{/block:IfRepeatAsideImage}
 
-	aside section .title { font-family: {select:Body Font}; }
+	aside section .title { font-family: {font:Title}; }
 	
 	aside section.following ul { padding-bottom: 1em; }
 	
