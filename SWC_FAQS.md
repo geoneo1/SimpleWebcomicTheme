@@ -30,6 +30,8 @@
 - [How can I enlarge the post author portrait in Simple Webcomic to make it bigger than 24x24?](#PostAvatarSize)
 - [Is there a way to make the “About” section in the footer wider?](#WiderFooterSection)
 
+---
+
 ###### Set Up
 
 <a name="InstallTheme">
