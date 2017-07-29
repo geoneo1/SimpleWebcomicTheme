@@ -36,7 +36,7 @@
 
 <a name="InstallTheme">
 ### How do you properly install your theme?
-First, start by going to: [https://www.tumblr.com/theme/39018](https://www.tumblr.com/theme/39018)
+First, start by going to: https://www.tumblr.com/theme/39018
 
 Click the "Install" button and select the blog you would like the theme to be installed on.
 
