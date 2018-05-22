@@ -1,3 +1,6 @@
+v4.0 [22 May 2018]
+- Changed "http" to "https" where applicable
+
 v4.0 [28 Nov 2016]
 - Small CSS change for ".comic-pagination, .pagination"
 - Updated theme/main.css
